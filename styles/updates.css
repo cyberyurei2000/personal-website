@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "MS Gothic";
+    src: url("/resources/fonts/MS-Gothic.woff2");
+}
+
+body {
+    background-color: #004040;
+    color: #ffffff;
+    font-family: "MS Gothic";
+    width: 60%;
+    min-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid;
+    border-color: #004040;
+}
+
+.mainbar {
+    border: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.item {
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.container {
+    min-width: 340px;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.container-title {
+    margin-bottom: 10px;
+}
+
+.container-date {
+    color: #556d6a;
+}
+
+.container-content {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.container-bar {
+    font-size: 14px;
+}
+
+a {
+    color: #7ca4a2;
+}
+
+hr {
+    margin-bottom: 20px;
+}

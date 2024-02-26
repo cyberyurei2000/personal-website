@@ -14,13 +14,6 @@
     }
 }
 
-@media(max-width: 480px) {
-    body {
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-}
-
 body {
     background-color: #3f455e;
     color: #ffffff;

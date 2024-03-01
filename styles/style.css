@@ -108,7 +108,7 @@ section {
     border: 1px solid;
     border-color: #24283b;
     background-color: #12141e52;
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: 100px;
     max-height: 100px;
 }
@@ -215,6 +215,10 @@ button:active {
 .bookmark-table {
     margin-top: 10px;
     margin-bottom: 2px;
+}
+
+.bookmark-item {
+    margin-left: 2px;
 }
 
 .list {

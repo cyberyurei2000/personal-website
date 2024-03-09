@@ -1,11 +1,13 @@
 @font-face {
     font-family: "MS ゴシック";
     src: url("/resources/fonts/MS-Gothic.woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "MS Pゴシック";
     src: url("/resources/fonts/MS-PGothic.ttf");
+    font-display: swap;
 }
 
 body {
@@ -35,6 +37,7 @@ body {
 
 .item {
     margin-top: auto;
+    margin-bottom: auto;
     text-decoration: none;
 }
 

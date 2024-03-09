@@ -1,11 +1,13 @@
 @font-face {
     font-family: "Sazanami Gothic";
     src: url("/resources/fonts/sazanami-gothic.woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "MS UI Gothic";
     src: url("/resources/fonts/MS-UIGothic.woff2");
+    font-display: swap;
 }
 
 @media(max-width: 720px) {

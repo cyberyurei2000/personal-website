@@ -23,8 +23,7 @@ body {
     min-width: 340px;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid;
-    border-color: #3f455e;
+    border: 5px solid #3f455e;
 }
 
 .mainbar {
@@ -193,31 +192,33 @@ button:active {
     margin-left: 10px;
 }
 
-.bookmark-title {
+.omake-title {
     background-color: #3f455e;
     box-shadow: 5px 5px #12141e;
     padding: 2px;
     padding-left: 10px;
     margin-bottom: 0;
+    font-size: large;
+    font-weight: bold;
 }
 
-.bookmark-link {
+.omake-link {
     color: #b03333;
     text-decoration: none;
     margin-bottom: 8px;
 }
 
-.bookmark-sub {
+.omake-sub {
     color: #574ac7;
     font-size: 12px;
 }
 
-.bookmark-table {
+.shrine-table {
     margin-top: 10px;
     margin-bottom: 2px;
 }
 
-.bookmark-item {
+.about-item {
     margin-left: 2px;
 }
 
@@ -231,6 +232,43 @@ button:active {
 .faq-quest {
     text-decoration: none;
     margin-bottom: 8px;
+}
+
+.shrine-item {
+    border-right: 4px solid;
+    border-color: #24283b;
+    position: relative;
+    text-align: center;
+}
+
+.shrine-item-text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 250, 250);
+    text-shadow: 5px #24283b;
+    left: 42px;
+    bottom: 11px;
+}
+
+.shrine-item-text2 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 250, 250);
+    text-shadow: 5px #24283b;
+    left: 35px;
+    bottom: 11px;
+}
+
+.shrine-item-text3 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 250, 250);
+    text-shadow: 5px #24283b;
+    left: 42px;
+    bottom: 11px;
 }
 
 .retro-button {
@@ -293,22 +331,12 @@ svg {
     top: -20%;
 }
 
-.viewer {
-    padding: 10px;
-    height: 100%;
-}
-
-.image {
-    width: 100%;
-    margin-bottom: 5px;
-}
-
 .source {
     color: #574ac7;
 }
 
 .aya {
-    position: absolute;
+    position: fixed;
     opacity: 0.5;
     right: 0px;
     bottom: 0px;

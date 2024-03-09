@@ -1,24 +1,26 @@
 @font-face {
-    font-family: "MS Gothic";
+    font-family: "MS ゴシック";
     src: url("/resources/fonts/MS-Gothic.woff2");
+}
+
+@font-face {
+    font-family: "MS Pゴシック";
+    src: url("/resources/fonts/MS-PGothic.ttf");
 }
 
 body {
     background-color: #004040;
     color: #ffffff;
-    font-family: "MS Gothic";
+    font-family: "MS ゴシック";
     width: 60%;
     min-width: 340px;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid;
-    border-color: #004040;
+    border: 5px solid #004040;
 }
 
 .mainbar {
-    border: solid;
-    border-width: 1px;
-    border-color: #ffffff;
+    border: 1px solid #ffffff;
     padding: 10px;
     margin-bottom: 30px;
     font-size: 16px;
@@ -27,6 +29,7 @@ body {
 }
 
 .title {
+    font-family: "MS Pゴシック";
     font-size: 18px;
 }
 

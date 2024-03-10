@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/content.css">
     <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
     <title>About - サイバー幽霊</title>
 </head>
@@ -14,9 +15,9 @@
                 <strong>サイバー幽霊</strong>
             </a>
             <span class="separator">|</span>
-            <a class="item" href="/pages/about">About</a>
-            <a class="item" href="/pages/shrine">Shrine</a>
-            <a class="item" href="/pages/omake">Omake</a>
+            <a class="mainbar-link" href="/pages/about">About</a>
+            <a class="mainbar-link" href="/pages/shrines">Shrines</a>
+            <a class="mainbar-link" href="/pages/omake">Omake</a>
         </div>
         <div class="subbar">
             <span id="fortune">No matter where you go, everyone's connected.</span>
@@ -24,7 +25,7 @@
         </div>
     </header>
     <main>
-        <section class="container">
+        <section>
             <h1>About this website</h1>
             <p>
                 I made this website as a small hobby and passing time project to not make my web development knowledge
@@ -42,29 +43,45 @@
             <p>
                 If you want to check out the website's source code, <a href="https://github.com/cyberyurei2000/personal-website" target="_blank" rel="noopener noreferrer">click here</a>.
             </p>
-            <p class="mini-warning">* the code is kinda messy, specially the css.</p>
+            <p class="mini-warning-text">* Just a small warning, the source code is kinda messy.</p>
             <form action="/pages/about/me">
-                <button class="button-error" type="submit">
+                <button type="submit">
                     <span class="button-text">Go to "About Me"⠀</span>
                     <span>▾</span>
                 </button>
             </form>
         </section>
-        <section class="container">
-            <h3 class="omake-title">Credits</h3>
+        <section>
+            <h3 class="section-title">Credits</h3>
+            <div>
+                <ul>
+                    <li>
+                        <span>
+                            The Aya Shameimaru picture can be found
+                            <a href="https://static.wikia.nocookie.net/all-worlds-alliance/images/c/ca/Aya_Shamamieru-Render.png/re
+                            vision/latest?cb=20190719051105">here</a>.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            The stamps in the 「Shrines」 page was made respectively by the DeviantArt users
+                            <a href="https://www.deviantart.com/redkuu/art/CDs-629663151">redkuu</a> and
+                            <a href="https://www.deviantart.com/0celots/art/007-664921551">0celots</a>.
+                        </span>
+                    </li>
+                </ul>
+            </div>
             <table>
-                <p class="about-item">
-                    The Aya Shameimaru picture source is
-                    <a href="https://static.wikia.nocookie.net/all-worlds-alliance/images/c/ca/Aya_Shamamieru-Render.png/re
-                    vision/latest?cb=20190719051105">here</a>.
+                <p>
+
                 </p>
                 <tr>
                     <td>
                         The favicon was made based off the FM Towns disc icon from
-                        <a href="https://gekk.info/articles/images/towns/img56.gif">Towns OS</a>, which I tried to colored it.
+                        <a href="https://gekk.info/articles/images/towns/img56.gif">Towns OS</a>.
                     </td>
                     <td>
-                        <img class="favicon" src="/resources/images/fmtowns.svg" alt="fm-towns">
+                        <img class="favicon" src="/resources/images/svg/fmtowns.svg" alt="fm-towns">
                     </td>
                 </tr>
             </table>

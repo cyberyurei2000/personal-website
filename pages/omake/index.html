@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/content.css">
     <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
     <title>Omake - サイバー幽霊</title>
 </head>
@@ -14,9 +15,9 @@
                 <strong>サイバー幽霊</strong>
             </a>
             <span class="separator">|</span>
-            <a class="item" href="/pages/about">About</a>
-            <a class="item" href="/pages/shrine">Shrine</a>
-            <a class="item" href="/pages/omake">Omake</a>
+            <a class="mainbar-link" href="/pages/about">About</a>
+            <a class="mainbar-link" href="/pages/shrines">Shrines</a>
+            <a class="mainbar-link" href="/pages/omake">Omake</a>
         </div>
         <div class="subbar">
             <span id="fortune">No matter where you go, everyone's connected.</span>
@@ -24,7 +25,7 @@
         </div>
     </header>
     <main>
-        <section class="container">
+        <section>
             <h1>Omake</h1>
             <p>
                 Omake (oh-mah-keh) is an oft-abused Japanese term used for bonus stuff. This page contains a lot of
@@ -33,9 +34,9 @@
             <p>For now there is only the bookmarks, but in the future I will share a lot of other things.</p>
             <p>This is based on <a href="https://rubenerd.com/omake.xml">Ruben Shade's Omake</a>.</p>
         </section>
-        <section class="container">
-            <details>
-                <summary class="omake-title">Bookmarks</summary>
+        <section>
+            <details open>
+                <summary class="section-title">Bookmarks</summary>
                 <div class="list">
                     <a href="/pages/omake/bookmarks">
                         <h4 class="omake-link">

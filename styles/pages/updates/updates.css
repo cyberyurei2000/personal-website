@@ -35,32 +35,32 @@ body {
     font-size: 18px;
 }
 
-.item {
+.mainbar-link {
     margin-top: auto;
     margin-bottom: auto;
     text-decoration: none;
 }
 
-.container {
+section {
     min-width: 340px;
     width: 60%;
     margin-bottom: 30px;
 }
 
-.container-title {
+.section-bar {
     margin-bottom: 10px;
 }
 
-.container-date {
+.section-date {
     color: #556d6a;
 }
 
-.container-content {
+.section-content {
     margin-left: 10px;
     font-size: 15px;
 }
 
-.container-bar {
+.option-bar {
     font-size: 14px;
 }
 

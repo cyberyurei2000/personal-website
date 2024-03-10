@@ -1,0 +1,110 @@
+/* Home page */
+.website-button {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.bbs-list {
+    border: 1px solid;
+    border-color: #24283b;
+    background-color: #12141e52;
+    overflow-y: scroll;
+    height: 100px;
+    max-height: 100px;
+}
+
+.bbs-item {
+    border-top: 0;
+    border-bottom: 2px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-bottom-color: #12141e;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.bbs-date {
+    font-weight: bold;
+}
+
+.bbs-bottom {
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+}
+
+.bbs-link {
+    color: #7ca4a2;
+}
+
+.hidden {
+    color: #3f455e;
+    text-shadow: none;
+    visibility: hidden;
+}
+
+/* About page */
+.favicon {
+    width: 64px;
+    margin-left: 10px;
+}
+
+.faq-question {
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+/* Shrine landing page */
+.shrine-link {
+    border-right: 4px solid;
+    border-color: #24283b;
+    position: relative;
+    text-align: center;
+}
+
+.shrine-link-text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 250, 250);
+    text-shadow: 5px #24283b;
+    left: 42px;
+    bottom: 11px;
+}
+
+/* Omake page */
+.omake-link {
+    color: #b03333;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+/* Warning containers (for every page if needed) */
+
+.warning-container {
+    padding: 10px;
+    background-color: #b0333389;
+    box-shadow: 5px 5px #b0333343;
+    background-image: url("../resources/images/svg/disclaimer.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 200px;
+    background-position: 110% 70%;
+}
+
+.construction-container {
+    padding: 10px;
+    background-color: #907449;
+    box-shadow: 5px 5px #90744934;
+    background-image: url("../resources/images/svg/construction2.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 200px;
+    background-position: 110% 50%;
+}
+
+.warning-text {
+    text-align: justify;
+    text-justify: inter-word;
+}

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/fun.css">
     <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
     <title>About - サイバー幽霊</title>
 </head>
-<body>
+<body class="me">
     <header>
         <div class="mainbar">
             <a href="/">
@@ -24,6 +25,7 @@
             <span id="date">23:19</span>
         </div>
     </header>
+    <div id="easteregg-placeholder"></div>
     <main>
         <section>
             <h1>About me</h1>
@@ -59,6 +61,15 @@
                 </div>
                 <div>
                     <h4 class="faq-question">
+                        <span>Q: Why the anime mascot?</span>
+                    </h4>
+                    <span>
+                        R: Ackchyually, this is not a anime character, it's a videogame character. I put this to make
+                        the site less blend. It also because theses mascots can infuriate some people.
+                    </span>
+                </div>
+                <div>
+                    <h4 class="faq-question">
                         <span>
                             Q: I saw that you put piracy websites in your bookmarks, don't you know that piracy is ilegal?
                         </span>
@@ -73,7 +84,11 @@
                         <span>Q: Where are you from?</span>
                     </h4>
                     <span>
-                        R: Somewhere... the only clue I can give you is that my main language is not english.
+                        R:
+                        <span id="easteregg-trigger">
+                            <span class="alert-trigger" ondblclick="fake_jalert()">Somewhere...</span>
+                        </span>
+                        the only clue I can give you is that my main language is not english.
                     </span>
                 </div>
             </div>
@@ -105,5 +120,6 @@
         <img class="aya" src="/resources/images/aya.webp" alt="aya">
     </footer>
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/fun.js"></script>
 </body>
 </html>

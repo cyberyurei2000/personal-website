@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/pages/updates/updates.css">
+    <link rel="stylesheet" href="/styles/fun.css">
     <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
     <title>Changelog - サイバー幽霊</title>
 </head>
-<body>
+<body class="updates">
     <header class="mainbar">
         <span class="title">アップデート BBS</span>
         <span class="mainbar-link">
             <a class="mainbar-link" href="/">Go Back</a>
         </span>
     </header>
+    <div id="easteregg-placeholder"></div>
     <main>
         <div class="option-bar">
             <span>|</span>
@@ -75,6 +77,29 @@
                 <p>There are some small improvements around the entire website.</p>
             </div>
         </section>
+        <section>
+            <div class="section-bar">
+                <span>■No.000005</span>
+                <span class="section-date">2024.03.17(日) 23:30</span>
+            </div>
+            <div class="section-content">
+                <p>Added new websites to the「Bookmarks」page.</p>
+                <p>Added a quick terminal commands section to the「Omake」page.</p>
+                <p>There are some small improvements around the entire website.</p>
+                <div class="hidden-text">
+                    <p class="fake-text">”General stability improvements to the website in general”</p>
+                    <p class="real-text">
+                        <a href="https://en.wikipedia.org/wiki/Easter_egg_(media)" target="_blank" rel="noopener noreferrer">Easter eggs</a>
+                        will start appearing all over the site. For now, there are two in total, the first is a japanese
+                        TV news telop that may appear.
+                        <span id="easteregg-trigger">
+                            <a href="#" onclick="telop()">What's a telop?</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="/scripts/fun.js"></script>
 </body>
 </html>

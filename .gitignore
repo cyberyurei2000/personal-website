@@ -1,5 +1,4 @@
-songs.css
-songs.js
-/pages/shrines/songs
 /resources/images/albums
-source.txt
+/pages/shrines/songs
+/styles/pages/shrines
+*.txt

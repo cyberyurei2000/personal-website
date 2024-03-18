@@ -1,3 +1,23 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #f0f0f09d;
+    --blue: #24283b;
+    --red: #b03333;
+    --green: #7ca4a2;
+    --yellow: #e0af68;
+    --purple: #574ac7;
+    --background: #3f455e;
+    --dark: #12141e;
+    --shadow: #24283b7c;
+    /* Exclusive colors */
+    --bbs-background: #12141e52;
+    --warning-background: #b0333389;
+    --warning-shadow: #b0333343;
+    --construction-background: #907449;
+    --construction-shadow: #90744934;
+}
+
 /* Home page */
 .website-button {
     vertical-align: middle;
@@ -6,8 +26,8 @@
 
 .bbs-list {
     border: 1px solid;
-    border-color: #24283b;
-    background-color: #12141e52;
+    border-color: var(--dark);
+    background-color: var(--bbs-background);
     overflow-y: scroll;
     height: 100px;
     max-height: 100px;
@@ -19,7 +39,7 @@
     border-left: 0;
     border-right: 0;
     border-style: solid;
-    border-bottom-color: #12141e;
+    border-bottom-color: var(--dark);
     padding: 5px;
     margin-top: 0;
     margin-bottom: 2px;
@@ -37,11 +57,11 @@
 }
 
 .bbs-link {
-    color: #7ca4a2;
+    color: var(--green);
 }
 
 .hidden {
-    color: #3f455e;
+    color: var(--background);
     text-shadow: none;
     visibility: hidden;
 }
@@ -60,7 +80,7 @@
 /* Shrine landing page */
 .shrine-link {
     border-right: 4px solid;
-    border-color: #24283b;
+    border-color: var(--dark);
     position: relative;
     text-align: center;
 }
@@ -70,24 +90,56 @@
     font-size: 20px;
     font-weight: bold;
     color: rgb(254, 250, 250);
-    text-shadow: 5px #24283b;
+    text-shadow: 5px var(--dark);
     left: 42px;
     bottom: 11px;
 }
 
 /* Omake page */
+.omake-list details {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.omake-container {
+    /* Empty */
+}
+
+.omake-title {
+    margin-top: 15px;
+}
+
 .omake-link {
-    color: #b03333;
+    color: var(--red);
     text-decoration: none;
     margin-bottom: 8px;
+}
+
+.omake-note {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.omake-console {
+    background-color: var(--black);
+    border: 1px solid var(--grey);
+    font-size: small;
+    text-align: left;
+    height: 2rem;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+
+.omake-command {
+    margin-left: 10px;
 }
 
 /* Warning containers (for every page if needed) */
 
 .warning-container {
     padding: 10px;
-    background-color: #b0333389;
-    box-shadow: 5px 5px #b0333343;
+    background-color: var(--warning-background);
+    box-shadow: 5px 5px var(--warning-shadow);
     background-image: url("../resources/images/svg/disclaimer.svg");
     background-repeat: no-repeat;
     background-size: 60% 200px;
@@ -96,8 +148,8 @@
 
 .construction-container {
     padding: 10px;
-    background-color: #907449;
-    box-shadow: 5px 5px #90744934;
+    background-color: var(--construction-background);
+    box-shadow: 5px 5px var(--construction-shadow);
     background-image: url("../resources/images/svg/construction2.svg");
     background-repeat: no-repeat;
     background-size: 60% 200px;

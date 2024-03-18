@@ -31,18 +31,128 @@
                 Omake (oh-mah-keh) is an oft-abused Japanese term used for bonus stuff. This page contains a lot of
                 resources, from recommendations to tips about anything that I feel like sharing.
             </p>
-            <p>For now there is only the bookmarks, but in the future I will share a lot of other things.</p>
             <p>This is based on <a href="https://rubenerd.com/omake.xml">Ruben Shade's Omake</a>.</p>
         </section>
         <section>
             <details open>
                 <summary class="section-title">Bookmarks</summary>
-                <div class="list">
-                    <a href="/pages/omake/bookmarks">
-                        <h4 class="omake-link">
-                            <span>Go to the bookmarks page ></span>
-                        </h4>
-                    </a>
+                <div class="omake-list">
+                    <h4 class="omake-link">
+                        <a href="/pages/omake/bookmarks"><span>Go to the bookmarks page ></span></a>
+                    </h4>
+                </div>
+            </details>
+        </section>
+        <!--<section>
+            <details>
+                <summary class="section-title">Personal preferences</summary>
+                <div class="omake-list">
+                    <ul>
+                        <li>
+                            <strong>Hot drink:</strong> Espresso
+                        </li>
+                        <li>
+                            <strong>Cold drink:</strong> Sugarcane juice
+                        </li>
+                        <li>
+                            <strong>Color:</strong> Midnight blue
+                        </li>
+                        <li>
+                            <strong>Date format:</strong> YYYY-MM-DD (ISO 8601)
+                        </li>
+                        <li>
+                            <strong>Desert:</strong> Japanese puffed rice cake (Okoshi)
+                        </li>
+                        <li>
+                            <strong>Measurements:</strong> International System of Units (SI)
+                        </li>
+                        <li>
+                            <strong>Live-Action Movie:</strong> Battle Royale (2000)
+                        </li>
+                        <li>
+                            <strong>Animated Movie:</strong> WALL-E (2008)
+                        </li>
+                        <li>
+                            <strong>Programming language:</strong> Python
+                        </li>
+                        <li>
+                            <strong>Singer/Band:</strong> The Strokes
+                        </li>
+                        <li>
+                            <strong>English spelling:</strong> American (usually)
+                        </li>
+                    </ul>
+                </div>
+            </details>
+        </section>-->
+        <section>
+            <details>
+                <summary class="section-title">Quick terminal commands</summary>
+                <p>
+                    This is a collection of quick terminal commands that I put here to share with other people,
+                    and also for me to to take a look at if I forget one of theses commands.
+                </p>
+                <section class="warning-container">
+                    <h3>Disclaimer</h3>
+                    <p class="warning-text">
+                        Run any command below at your own risk! Never blindly type
+                        commands that you found on the internet without making your own
+                        research first.
+                    </p>
+                </section>
+                <p>¥ = Normal　|　# = Administrator/Root</p>
+                <div class="omake-list">
+                    <details>
+                        <summary>Get the best video quality (yt-dlp)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                ￥　yt-dlp -f ”bv+ba” YOUTUBE_URL
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Get the best audio quality (yt-dlp)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                ￥　yt-dlp -f ”ba” -x YOUTUBE_URL
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Increase volume of a media file (ffmpeg)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                ￥　ffmpeg -i ”MEDIA.in” -fa volume=4.0 ”MEDIA.out”
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Setup with a local account (Windows)</summary>
+                        <p class="omake-note">Press Shift + F10, then:</p>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                ＃＞　OOBE<span class="fix-msgothic-encoding">\</span>BYPASSNRO
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Get all used network ports (Linux)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">＃　ss -tulpn | grep LISTEN</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Detach a command from the terminal (Linux)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">￥　COMMAND & disown</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Force logout (Linux)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">￥　pkill -KILL -u $USER</span>
+                        </div>
+                    </details>
                 </div>
             </details>
         </section>

@@ -1,3 +1,7 @@
+:root {
+    --red: #b03333;
+}
+
 .section-warning-error {
     padding: 10px;
     height: 250px;
@@ -19,7 +23,7 @@
 }
 
 .section-warning-title {
-    color: #b03333;
+    color: var(--red);
 }
 
 .footerbar-warning {

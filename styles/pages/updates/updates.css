@@ -1,3 +1,10 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --green: #556d6a;
+    --background: #004040;
+}
+
 @font-face {
     font-family: "MS ゴシック";
     src: url("/resources/fonts/MS-Gothic.woff2");
@@ -11,18 +18,18 @@
 }
 
 body {
-    background-color: #004040;
-    color: #ffffff;
+    background-color: var(--background);
+    color: var(--white);
     font-family: "MS ゴシック";
     width: 60%;
     min-width: 340px;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #004040;
+    border: 5px solid var(--background);
 }
 
 .mainbar {
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white);
     padding: 10px;
     margin-bottom: 30px;
     font-size: 16px;
@@ -52,7 +59,7 @@ section {
 }
 
 .section-date {
-    color: #556d6a;
+    color: var(--green);
 }
 
 .section-content {
@@ -65,7 +72,7 @@ section {
 }
 
 a {
-    color: #7ca4a2;
+    color: var(--green);
 }
 
 hr {

@@ -16,10 +16,41 @@
                 <strong>サイバー幽霊</strong>
             </a>
             <span class="separator">|</span>
-            <a class="mainbar-link" href="/pages/about">About</a>
-            <a class="mainbar-link" href="/pages/shrines">Shrines</a>
+            <a class="mainbar-link-active" href="/pages/about">About</a>
+            <a class="mainbar-link" href="/pages/projects">Projects</a>
+            <a class="mainbar-link" href="/pages/warning-construction">Shrines</a>
             <a class="mainbar-link" href="/pages/omake">Omake</a>
         </div>
+        <details class="mainbar-mobile">
+            <summary>
+                <a href="/">
+                    <strong>サイバー幽霊</strong>
+                </a>
+                <span class="marker">▾</span>
+            </summary>
+            <div class="mainbar-dropdown">
+                <a href="/pages/about">
+                    <p class="mainbar-dropdown-link">
+                        <span>• About •</span>
+                    </p>
+                </a>
+                <a href="/pages/projects">
+                    <p class="mainbar-dropdown-link">
+                        <span>Projects</span>
+                    </p>
+                </a>
+                <a href="/pages/warning-construction">
+                    <p class="mainbar-dropdown-link">
+                        <span>Shrines</span>
+                    </p>
+                </a>
+                <a href="/pages/omake">
+                    <p class="mainbar-dropdown-link">
+                        <span>Omake</span>
+                    </p>
+                </a>
+            </div>
+        </details>
         <div class="subbar">
             <span id="fortune">No matter where you go, everyone's connected.</span>
             <span id="date">23:19</span>
@@ -30,10 +61,11 @@
         <section>
             <h1>About me</h1>
             <p>
-                I don't know, I'm just a 20 something years old person, living somewhere in the world.
+                I don't know what to say about me, I'm just a shy 20 something years old person, living somewhere in the world.
                 I usually lurk around the internet in my free time.
             </p>
-            <p>I like computers, music, videogames and asian culture.</p>
+            <p>I like computers, music, old school videogames and asian culture.</p>
+            <img class="persona" src="/resources/images/persona/persona.jpg" alt="persona">
         </section>
         <section>
             <h3 class="section-title">FAQ</h3>
@@ -71,7 +103,7 @@
                 <div>
                     <h4 class="faq-question">
                         <span>
-                            Q: I saw that you put piracy websites in your bookmarks, don't you know that piracy is ilegal?
+                            Q: Why did you put piracy websites in your bookmarks? don't you know that piracy is ilegal?
                         </span>
                     </h4>
                     <span>
@@ -113,10 +145,11 @@
             <span>
                 <i>© cyber_yurei2000</i>
             </span>
-            <span>
-                <a href="https://github.com/cyberyurei2000/personal-website" target="_blank" rel="noopener noreferrer">Source Code</a>
+            <span id="webver-trigger">
+                <a href="#" onclick="display_webver()">Help?</a>
             </span>
         </section>
+        <div id="webver-placeholder"></div>
         <img class="aya" src="/resources/images/aya.webp" alt="aya">
     </footer>
     <script src="/scripts/script.js"></script>

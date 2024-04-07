@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/fun.css">
     <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
     <title>Omake - サイバー幽霊</title>
 </head>
@@ -16,9 +17,40 @@
             </a>
             <span class="separator">|</span>
             <a class="mainbar-link" href="/pages/about">About</a>
-            <a class="mainbar-link" href="/pages/shrines">Shrines</a>
-            <a class="mainbar-link" href="/pages/omake">Omake</a>
+            <a class="mainbar-link" href="/pages/projects">Projects</a>
+            <a class="mainbar-link" href="/pages/warning-construction">Shrines</a>
+            <a class="mainbar-link-active" href="/pages/omake">Omake</a>
         </div>
+        <details class="mainbar-mobile">
+            <summary>
+                <a href="/">
+                    <strong>サイバー幽霊</strong>
+                </a>
+                <span class="marker">▾</span>
+            </summary>
+            <div class="mainbar-dropdown">
+                <a href="/pages/about">
+                    <p class="mainbar-dropdown-link">
+                        <span>About</span>
+                    </p>
+                </a>
+                <a href="/pages/projects">
+                    <p class="mainbar-dropdown-link">
+                        <span>Projects</span>
+                    </p>
+                </a>
+                <a href="/pages/warning-construction">
+                    <p class="mainbar-dropdown-link">
+                        <span>Shrines</span>
+                    </p>
+                </a>
+                <a href="/pages/omake">
+                    <p class="mainbar-dropdown-link">
+                        <span>• Omake •</span>
+                    </p>
+                </a>
+            </div>
+        </details>
         <div class="subbar">
             <span id="fortune">No matter where you go, everyone's connected.</span>
             <span id="date">23:19</span>
@@ -43,54 +75,120 @@
                 </div>
             </details>
         </section>
-        <!--<section>
+        <section>
             <details>
-                <summary class="section-title">Personal preferences</summary>
+                <summary class="section-title">Programs & tools</summary>
+                <p>
+                    Here I gonna share some of programs or tools that I use, I'll cover mostly Linux/Windows
+                    programs and tools, and some Android apps.
+                </p>
                 <div class="omake-list">
                     <ul>
                         <li>
-                            <strong>Hot drink:</strong> Espresso
+                            <strong>Browser:</strong>
+                            <span>
+                                <a href="https://www.google.com/intl/en-US/chrome">Google Chrome</a> /
+                                <a href="https://www.mozilla.org/en-US/firefox/new">Firefox</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Cold drink:</strong> Sugarcane juice
+                            <strong>Editor (CLI):</strong>
+                            <span>
+                                <a href="https://neovim.io">neovim</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Color:</strong> Midnight blue
+                            <strong>Editor (GUI):</strong>
+                            <span>
+                                <a href="https://code.visualstudio.com">Visual Studio Code</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Date format:</strong> YYYY-MM-DD (ISO 8601)
+                            <strong>Downloader:</strong>
+                            <span>
+                                <a href="https://aria2.github.io">aria2</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Desert:</strong> Japanese puffed rice cake (Okoshi)
+                            <strong>Diagrams editor:</strong>
+                            <span>
+                                <a href="https://www.microsoft.com/en-US/microsoft-365/visio/flowchart-software">
+                                    Microsoft Visio (Windows)
+                                </a> /
+                                <a href="https://www.libreoffice.org">LibreOffice Draw (Linux)</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Measurements:</strong> International System of Units (SI)
+                            <strong>ID3 tag editor:</strong>
+                            <span>
+                                <a href="https://kid3.kde.org">kid3</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Live-Action Movie:</strong> Battle Royale (2000)
+                            <strong>Image editor:</strong>
+                            <a href="https://krita.org">Krita</a>
                         </li>
                         <li>
-                            <strong>Animated Movie:</strong> WALL-E (2008)
+                            <strong>Jellyfin client:</strong>
+                            <a href="https://github.com/jarnedemeulemeester/findroid">Findroid (Android)</a>
                         </li>
                         <li>
-                            <strong>Programming language:</strong> Python
+                            <strong>Media player:</strong>
+                            <a href="https://mpv.io/">mpv</a>
                         </li>
                         <li>
-                            <strong>Singer/Band:</strong> The Strokes
+                            <strong>RSS Feed:</strong>
+                            <a href="https://xdaforums.com/t/app-aggregator-news-rss-feed-reader-free-no-ads-2024.4652685">
+                                Aggregator News (Android)
+                            </a>
                         </li>
                         <li>
-                            <strong>English spelling:</strong> American (usually)
+                            <strong>Screen awake:</strong>
+                            <a href="https://codeberg.org/WhyNotHugo/caffeine-ng">caffeine-ng (Linux)</a> /
+                            <a href="https://github.com/microsoft/PowerToys">PowerToys Awake (Windows)</a> /
+                            <a href="https://lab.zhs.moe/caffeine">Caffeine (Android)</a>
+                        </li>
+                        <li>
+                            <strong>Scrobbler:</strong>
+                            <a href="https://github.com/kawaiiDango/pano-scrobbler">Pano Scrobbler (Android)</a>
+                        </li>
+                        <li>
+                            <strong>Video and audio processing:</strong>
+                            <a href="https://ffmpeg.org">ffmpeg</a>
+                        </li>
+                        <li>
+                            <strong>Video archiving:</strong>
+                            <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>
+                        </li>
+                        <li>
+                            <strong>Virtualization:</strong>
+                            <a href="https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-pro.html.html">VMware</a> /
+                            <a href="https://www.qemu.org">QEMU</a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Browsers extensions:</p>
+                <div class="omake-list">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/gorhill/uBlock">uBlock Origin</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sienori/simple-translate">Simple Translate</a>
+                        </li>
+                        <li>
+                            <a href="https://snowflake.torproject.org/">Tor Snowflake</a>
                         </li>
                     </ul>
                 </div>
             </details>
-        </section>-->
+        </section>
         <section>
             <details>
                 <summary class="section-title">Quick terminal commands</summary>
                 <p>
                     This is a collection of quick terminal commands that I put here to share with other people,
-                    and also for me to to take a look at if I forget one of theses commands.
+                    and also for me to to take a look at if I forget.
                 </p>
                 <section class="warning-container">
                     <h3>Disclaimer</h3>
@@ -100,13 +198,13 @@
                         research first.
                     </p>
                 </section>
-                <p>¥ = Normal　|　# = Administrator/Root</p>
+                <p>$ = Normal　|　# = Administrator/Root</p>
                 <div class="omake-list">
                     <details>
                         <summary>Get the best video quality (yt-dlp)</summary>
                         <div class="omake-console">
                             <span class="omake-command">
-                                ￥　yt-dlp -f ”bv+ba” YOUTUBE_URL
+                                $　yt-dlp -f ”bv+ba” YOUTUBE_URL
                             </span>
                         </div>
                     </details>
@@ -114,7 +212,7 @@
                         <summary>Get the best audio quality (yt-dlp)</summary>
                         <div class="omake-console">
                             <span class="omake-command">
-                                ￥　yt-dlp -f ”ba” -x YOUTUBE_URL
+                                $　yt-dlp -f ”ba” -x "YOUTUBE_URL"
                             </span>
                         </div>
                     </details>
@@ -122,7 +220,47 @@
                         <summary>Increase volume of a media file (ffmpeg)</summary>
                         <div class="omake-console">
                             <span class="omake-command">
-                                ￥　ffmpeg -i ”MEDIA.in” -fa volume=4.0 ”MEDIA.out”
+                                $　ffmpeg -i ”MEDIA.in” -fa volume=4.0 -c copy ”MEDIA.out”
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Trim a media file (ffmpeg)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                $　ffmpeg -i "MEDIA.in" -ss 00:00:00 -to 00:00:00 -c copy "MEDIA.out"
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Flip image horizontally (imagemagick)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                $　convert "IMAGE.in" -flop "IMAGE.out"
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Flip image vertically (imagemagick)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                $　convert "IMAGE.in" -flip "IMAGE.out"
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Extract a archive file (7zip)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                $　7z x "ARCHIVE.ext"
+                            </span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Get all devices IP on a network (nmap)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">
+                                #　nmap -sn 000.000.00.000/00
                             </span>
                         </div>
                     </details>
@@ -131,26 +269,32 @@
                         <p class="omake-note">Press Shift + F10, then:</p>
                         <div class="omake-console">
                             <span class="omake-command">
-                                ＃＞　OOBE<span class="fix-msgothic-encoding">\</span>BYPASSNRO
+                                #>　OOBE\BYPASSNRO
                             </span>
                         </div>
                     </details>
                     <details>
                         <summary>Get all used network ports (Linux)</summary>
                         <div class="omake-console">
-                            <span class="omake-command">＃　ss -tulpn | grep LISTEN</span>
+                            <span class="omake-command">#　ss -tulpn | grep LISTEN</span>
                         </div>
                     </details>
                     <details>
                         <summary>Detach a command from the terminal (Linux)</summary>
                         <div class="omake-console">
-                            <span class="omake-command">￥　COMMAND & disown</span>
+                            <span class="omake-command">$　COMMAND & disown</span>
                         </div>
                     </details>
                     <details>
                         <summary>Force logout (Linux)</summary>
                         <div class="omake-console">
-                            <span class="omake-command">￥　pkill -KILL -u $USER</span>
+                            <span class="omake-command">$　pkill -KILL -u $USER</span>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Reboot only the userspace (Linux)</summary>
+                        <div class="omake-console">
+                            <span class="omake-command">#　systemctl soft-reboot</span>
                         </div>
                     </details>
                 </div>
@@ -162,12 +306,14 @@
             <span>
                 <i>© cyber_yurei2000</i>
             </span>
-            <span>
-                <a href="https://github.com/cyberyurei2000/personal-website" target="_blank" rel="noopener noreferrer">Source Code</a>
+            <span id="webver-trigger">
+                <a href="#" onclick="display_webver()">Help?</a>
             </span>
         </section>
+        <div id="webver-placeholder"></div>
         <img class="aya" src="/resources/images/aya.webp" alt="aya">
     </footer>
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/fun.js"></script>
 </body>
 </html>

@@ -1,10 +1,20 @@
 :root {
     --black: #000000;
     --white: #ffffff;
+    /* J-Alert colors */
     --alert-red: #e01213;
+    --alert-yellow: #faed4c;
     --mobile-alert-red: #ce495e;
     --mobile-alert-blue: #1b509a;
-    --alert-yellow: #faed4c;
+    /* Webver colors */
+    --dialog-black: #000000;
+    --dialog-white: #eeeeee;
+    --dialog-grey: #9a9a9a;
+    --dialog-background: #d5d1c9;
+    --dialog-border: #afadad;
+    --dialog-titlebar: #2a4a8a;
+    --dialog-banner-background: #24283b;
+    --dialog-banner-text: #b03333;
 }
 
 @font-face {
@@ -13,7 +23,7 @@
     font-display: swap;
 }
 
-/* Fake J-Alert */
+/* -------------------Fake J-Alert------------------- */
 .alert-trigger:hover {
     color: var(--alert-yellow);
 }
@@ -189,7 +199,7 @@
     }
 }
 
-/* Japanese telop */
+/* -------------------Japanese Telop------------------- */
 body.me {
     animation: opening 2.5s linear 1s, closing 2.5s linear 25s;
     animation-fill-mode: forwards !important;
@@ -245,4 +255,117 @@ body.me {
 
 .hidden-text:hover .real-text {
     display: contents;
+}
+
+
+/* -------------------Webver------------------- */
+
+.about-dialog {
+    background: var(--dialog-background);
+    color: var(--dialog-black);
+    border: 2px solid var(--dialog-border);
+    font-family: "Tahoma, MS Gothic";
+    font-size: 14px;
+    text-shadow: none;
+    min-width: 340px;
+    width: 80%;
+    max-width: 420px;
+    height: 400px;
+    position: fixed;
+    margin: 5% auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+.about-dialog-header {
+    background-color: var(--dialog-titlebar);
+    color: var(--dialog-white);
+    padding: 5px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-dialog-main {
+    /* Empty */
+}
+
+.about-dialog-banner {
+    background-color: var(--dialog-banner-background);
+    width: 100px;
+    height: 373px;
+    display: table-cell;
+    writing-mode: vertical-rl;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.banner-text {
+    font-size: 30px;
+    font-family: "Sazanami Gothic";
+    font-weight: bold;
+    text-shadow: 2px 2px var(--dialog-black);
+    color: var(--dialog-banner-text);
+}
+
+.about-dialog-content {
+    vertical-align: top;
+}
+
+.content-text-top {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.content-text-bottom {
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.dialog-button {
+    background: var(--dialog-background);
+    border-bottom-color: var(--dialog-grey);
+    border-right-color: var(--dialog-grey);
+    border-top-color: var(--dialog-white);
+    border-left-color: var(--dialog-white);
+    border-style: outset;
+}
+
+.dialog-button:active {
+    border-style: inset;
+    border-bottom-color: var(--dialog-white);
+    border-right-color: var(--dialog-white);
+    border-top-color: var(--dialog-grey);
+    border-left-color: var(--dialog-grey);
+}
+
+.window-button {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+@-moz-document url-prefix() {
+    .content-text-bottom {
+        margin-left: 10px;
+        margin-top: 85px;
+    }
+
+    .window-button {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+.normal-button {
+    position: relative;
+    float: right;
+    margin-right: 4%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

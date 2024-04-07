@@ -2,6 +2,7 @@
     --black: #000000;
     --white: #ffffff;
     --green: #556d6a;
+    --link-hover: #75928f;
     --background: #004040;
 }
 
@@ -73,6 +74,10 @@ section {
 
 a {
     color: var(--green);
+}
+
+a:hover {
+    color: var(--link-hover);
 }
 
 hr {

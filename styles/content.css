@@ -10,15 +10,17 @@
     --background: #3f455e;
     --dark: #12141e;
     --shadow: #24283b7c;
-    /* Exclusive colors */
+    /* ----------Specific page colors---------- */
     --bbs-background: #12141e52;
+    --bbs-link-hover: #5ddad3;
+    --project-info-background: #1b509a6b;
     --warning-background: #b0333389;
     --warning-shadow: #b0333343;
     --construction-background: #907449;
     --construction-shadow: #90744934;
 }
 
-/* Home page */
+/* -------------------Home page------------------- */
 .website-button {
     vertical-align: middle;
     margin-left: 5px;
@@ -60,13 +62,27 @@
     color: var(--green);
 }
 
+.bbs-link:hover {
+    color: var(--bbs-link-hover);
+}
+
 .hidden {
     color: var(--background);
     text-shadow: none;
     visibility: hidden;
 }
 
-/* About page */
+/* -------------------About page------------------- */
+.persona {
+    width: 100px;
+    border-radius: 5%;
+    box-shadow: 5px 5px var(--dark);
+    display: block;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .favicon {
     width: 64px;
     margin-left: 10px;
@@ -77,7 +93,34 @@
     margin-bottom: 8px;
 }
 
-/* Shrine landing page */
+/* -------------------Projects page------------------- */
+.project-image-container {
+    background-color: #12141e8e;
+}
+
+.project-image {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 720px) {
+    .project-image {
+        width: 100%;
+    }
+}
+
+.project-info {
+    background-color: var(--project-info-background);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* -------------------Shrines landing page------------------- */
 .shrine-link {
     border-right: 4px solid;
     border-color: var(--dark);
@@ -95,10 +138,14 @@
     bottom: 11px;
 }
 
-/* Omake page */
+/* -------------------Omake page------------------- */
 .omake-list details {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.omake-list li {
+    margin-bottom: 10px;
 }
 
 .omake-container {
@@ -123,6 +170,7 @@
 .omake-console {
     background-color: var(--black);
     border: 1px solid var(--grey);
+    font-family: monospace;
     font-size: small;
     text-align: left;
     height: 2rem;
@@ -134,7 +182,7 @@
     margin-left: 10px;
 }
 
-/* Warning containers (for every page if needed) */
+/* ---------------Warning containers (for every page if needed)--------------- */
 
 .warning-container {
     padding: 10px;

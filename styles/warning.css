@@ -2,24 +2,21 @@
     --red: #b03333;
 }
 
-.section-warning-error {
+.section-warning {
     padding: 10px;
     height: 250px;
-    background-image: url("../resources/images/svg/warning.svg");
     background-repeat: no-repeat;
     background-size: 50% 300px;
     background-position: 95% 90%;
     margin-bottom: 20px;
 }
 
+.section-warning-error {
+    background-image: url("../resources/images/svg/warning.svg");
+}
+
 .section-warning-construction {
-    padding: 10px;
-    height: 200px;
     background-image: url("../resources/images/svg/construction.svg");
-    background-repeat: no-repeat;
-    background-size: 50% 300px;
-    background-position: 95% 30%;
-    margin-bottom: 20px;
 }
 
 .section-warning-title {

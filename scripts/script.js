@@ -1,4 +1,4 @@
-// Date
+// Date & Fortunes
 const dateElem = document.getElementById("date");
 const fortuneElem = document.getElementById("fortune");
 
@@ -9,7 +9,7 @@ var day = date.getDate();
 var list = [
     "Do a barrel roll",
     "Install Gentoo",
-    "The song is pure sex",
+    "This song is pure sex",
     "Please send all complaints to /dev/null",
     "Thank you, for everything",
     "No matter where you go, everyone's connected.",
@@ -24,10 +24,8 @@ var list = [
     "Let's all love Lain",
     "What the hell am I doing here?"
 ]
-
 var num = Math.floor(Math.random() * list.length);
 
-// Date
 const now = new Date();
 //dateElem.innerText = `${now.getFullYear()}/${("0" + (now.getMonth() + 1)).slice(-2)}/${("0" + now.getDate()).slice(-2)} • ${("0" + now.getHours()).slice(-2)}:${("0" + now.getMinutes()).slice(-2)}`;
 dateElem.innerText = `${("0" + now.getHours()).slice(-2)}:${("0" + now.getMinutes()).slice(-2)}`;

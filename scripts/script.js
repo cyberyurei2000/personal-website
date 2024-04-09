@@ -22,7 +22,8 @@ var list = [
     "980 - 1416 - 1523",
     "I SURVIVED THE ENDLESS EIGHT",
     "Let's all love Lain",
-    "What the hell am I doing here?"
+    "What the hell am I doing here?",
+    "You can take advantage of everything here, except me"
 ]
 var num = Math.floor(Math.random() * list.length);
 
@@ -61,4 +62,51 @@ switch(month) {
     default:
         fortuneElem.innerText = list[num];
         break;
+}
+
+// Webver
+var dialog_place = document.getElementById("webver-placeholder");
+var dialog_trigger = document.getElementById("webver-trigger");
+
+function display_webver() {
+    let dialog = `
+    <div class="about-dialog">
+        <div class="about-dialog-header">
+            <span>About this page</span>
+            <div>
+                <button class="dialog-button window-button" onclick="close_webver()">
+                    <strong>X</strong>
+                </button>
+            </div>
+        </div>
+        <table class="about-dialog-main" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="about-dialog-banner">
+                    <p class="banner-text">サイバー幽霊</p>
+                </td>
+                <td class="about-dialog-content">
+                    <div class="content-text-top">
+                        <p>サイバー幽霊</p>
+                        <p>Version 2024.04.09</p>
+                        <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
+                    </div>
+                    <div class="content-text-bottom">
+                        <p>This product is hosted on Neocities and licensed under the 3-Clause BSD License to:</p>
+                        <p>Visitor</p>
+                        <hr>
+                        <button class="dialog-button normal-button" onclick="close_webver()">OK</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    `;
+
+    dialog_trigger.innerHTML = `<a href="#">Help?</a>`;
+    dialog_place.innerHTML = dialog;
+}
+
+function close_webver() {
+    dialog_place.innerHTML = "";
+    dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">Help?</a>`;
 }

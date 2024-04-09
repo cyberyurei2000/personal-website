@@ -9,6 +9,12 @@ CREDITS
 var jalert_place = document.getElementById("easteregg-placeholder");
 var jalert_trigger = document.getElementById("easteregg-trigger");
 
+function fix_audio(audio) {
+    audio.play();
+    audio.pause();
+    audio.currentTime = 0;
+}
+
 function fake_jalert() {
     let alert = `
     <div class="alert">
@@ -42,6 +48,7 @@ function fake_jalert() {
     let audio = new Audio("https://files.catbox.moe/zrbomb.mp3");
 
     jalert_trigger.innerHTML = "<span>Somewhere...</span>"
+    fix_audio(audio);
     setTimeout(function() { audio.play() }, 1000);
     setTimeout(function() { jalert_place.innerHTML = mini_alert }, 1100);
     setTimeout(function() { jalert_place.innerHTML += alert }, 3300);
@@ -61,6 +68,7 @@ function telop() {
     jalert_place.innerHTML = `<div class="telop" id="telop"></div>`;
     let telop = document.getElementById("telop");
 
+    fix_audio(audio);
     if(document.body.className.match("me")) {
         setTimeout(function() { document.documentElement.scrollTop = 0 }, 500);
         setTimeout(function() { document.body.style.animationPlayState = "running" }, 1000);
@@ -69,51 +77,4 @@ function telop() {
         setTimeout(function() { telop.innerText = "Congratulations! You discovered one of the website's secrets!" }, 12000);
         setTimeout(function() { telop.innerText = "" }, 25000);
     }
-}
-
-// Webver
-var dialog_place = document.getElementById("webver-placeholder");
-var dialog_trigger = document.getElementById("webver-trigger");
-
-function display_webver() {
-    let dialog = `
-    <div class="about-dialog">
-        <div class="about-dialog-header">
-            <span>About this page</span>
-            <div>
-                <button class="dialog-button window-button" onclick="close_webver()">
-                    <strong>X</strong>
-                </button>
-            </div>
-        </div>
-        <table class="about-dialog-main" cellspacing="0" cellpadding="0">
-            <tr>
-                <td class="about-dialog-banner">
-                    <p class="banner-text">サイバー幽霊</p>
-                </td>
-                <td class="about-dialog-content">
-                    <div class="content-text-top">
-                        <p>サイバー幽霊</p>
-                        <p>Version 2024.04.07</p>
-                        <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
-                    </div>
-                    <div class="content-text-bottom">
-                        <p>This product is licensed under the 3-Clause BSD License to:</p>
-                        <p>Visitor</p>
-                        <hr>
-                        <button class="dialog-button normal-button" onclick="close_webver()">OK</button>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    `;
-
-    dialog_trigger.innerHTML = `<a href="#">Help?</a>`;
-    dialog_place.innerHTML = dialog;
-}
-
-function close_webver() {
-    dialog_place.innerHTML = "";
-    dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">Help?</a>`;
 }

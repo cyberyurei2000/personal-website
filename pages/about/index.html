@@ -52,8 +52,13 @@
             </div>
         </details>
         <div class="subbar">
-            <span id="fortune">No matter where you go, everyone's connected.</span>
-            <span id="date">23:19</span>
+            <marquee class="subbar-fortune">
+                <span id="fortune">No matter where you go, everyone's connected.</span>
+            </marquee>
+            <div class="subbar-clock">
+                <object class="clock-icon" data="/resources/images/svg/clock.svg" type="image/svg+xml"></object>
+                <span id="date">23:19</span>
+            </div>
         </div>
     </header>
     <main>
@@ -142,6 +147,5 @@
         <img class="aya" src="/resources/images/aya.webp" alt="aya">
     </footer>
     <script src="/scripts/script.js"></script>
-    <script src="/scripts/fun.js"></script>
 </body>
 </html>

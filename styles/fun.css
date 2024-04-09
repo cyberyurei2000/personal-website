@@ -1,12 +1,12 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    /* J-Alert colors */
+    /* ----------J-Alert colors---------- */
     --alert-red: #e01213;
     --alert-yellow: #faed4c;
     --mobile-alert-red: #ce495e;
     --mobile-alert-blue: #1b509a;
-    /* Webver colors */
+    /* ----------Webver colors---------- */
     --dialog-black: #000000;
     --dialog-white: #eeeeee;
     --dialog-grey: #9a9a9a;

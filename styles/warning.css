@@ -12,11 +12,11 @@
 }
 
 .section-warning-error {
-    background-image: url("../resources/images/svg/warning.svg");
+    background-image: url("/resources/images/svg/warning.svg");
 }
 
 .section-warning-construction {
-    background-image: url("../resources/images/svg/construction.svg");
+    background-image: url("/resources/images/svg/construction.svg");
 }
 
 .section-warning-title {

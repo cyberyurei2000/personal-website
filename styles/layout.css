@@ -33,14 +33,14 @@ body {
     border: 5px solid var(--background);
     text-shadow: 2px 2px var(--black);
     font-family: "MS UI Gothic";
-    width: 60%;
+    width: 50%;
     min-width: 340px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* -------------------Header------------------- */
-@media(max-width: 720px) {
+@media(max-width: 800px) {
     .mainbar {
         display: none;
     }
@@ -127,7 +127,7 @@ body {
 .subbar-clock {
     margin-left: 10px;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .clock-icon {
@@ -211,7 +211,7 @@ li:not(:last-child) {
     font-size: 16px;
 }
 
-@media(max-width: 720px) {
+@media(max-width: 800px) {
     .aya {
         display: none;
     }

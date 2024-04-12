@@ -20,7 +20,38 @@
     --construction-shadow: #90744934;
 }
 
+@font-face {
+    font-family: "Digital-7";
+    src: url("/resources/fonts/digital-7.woff2");
+    font-display: swap;
+}
+
 /* -------------------Home page------------------- */
+.section-center {
+    text-align: center;
+}
+
+.section-center2 {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-features {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.features-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.features-text {
+    margin-right: 15px;
+}
+
 .website-button {
     vertical-align: middle;
     margin-left: 5px;
@@ -120,6 +151,64 @@
     margin-bottom: 0;
 }
 
+/* -------------------Jukebox page------------------- */
+/*
+.jukebox-display {
+    background-color: #202020;
+    color: #b0f0c0;
+    font-family: "Digital-7";
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.jukebox-controls {
+    margin-top: 8px;
+}
+
+.jukebox-controls > summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jukebox-controls-button {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.jukebox-controls-icon {
+    width: 10px;
+}
+
+.jukebox-marker {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.jukebox-dropdown {
+    background-color: var(--dropdown-background);
+    padding-top: 3px;
+    padding-bottom: 13px;
+    margin-top: 12px;
+}
+
+.song-item {
+    appearance: none;
+    margin-bottom: 20px;
+}
+
+.song-item + label {
+    cursor: pointer;
+}
+
+.song-item:checked + label {
+    background: var(--background);
+    outline: 5px solid var(--background);
+}
+*/
 /* -------------------Shrines landing page------------------- */
 .shrine-link {
     border-right: 4px solid;
@@ -183,7 +272,6 @@
 }
 
 /* ---------------Warning containers (for every page if needed)--------------- */
-
 .warning-container {
     padding: 10px;
     background-color: var(--warning-background);

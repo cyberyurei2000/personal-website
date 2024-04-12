@@ -7,23 +7,32 @@ var month = date.getMonth() + 1;
 var day = date.getDate();
 
 var list = [
-    "Do a barrel roll",
+    "Do a barrel roll!",
     "Install Gentoo",
+    "Sir, this is the anime board",
     "This song is pure sex",
     "Please send all complaints to /dev/null",
     "Thank you, for everything",
     "No matter where you go, everyone's connected.",
     "Remember, with great power comes great responsibility.",
+    "I'm just playing games, I know that's plastic love",
+    "Oh how I hate the sun like I hate everyone",
+    "Deleting the System32 folder makes your computer faster",
+    "PARENTAL ADVISORY: I say \"fuck\" a lot",
     "Not quite my tempo",
     "Are we still partners?",
     "How disgusting",
-    "You Only Live Once",
+    "You only live once",
     "I know what you were doing...",
     "980 - 1416 - 1523",
+    "I fucking hate MacOS",
+    "I have some masochistic tendencies",
     "I SURVIVED THE ENDLESS EIGHT",
     "Let's all love Lain",
+    "You can take advantage of everything here, except me",
     "What the hell am I doing here?",
-    "You can take advantage of everything here, except me"
+    "No Items, Fox Only, Final Destination",
+    "If you're still alive, you can keep going!"
 ]
 var num = Math.floor(Math.random() * list.length);
 
@@ -87,7 +96,7 @@ function display_webver() {
                 <td class="about-dialog-content">
                     <div class="content-text-top">
                         <p>サイバー幽霊</p>
-                        <p>Version 2024.04.09</p>
+                        <p>Version 2024.04.12</p>
                         <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
                     </div>
                     <div class="content-text-bottom">
@@ -110,3 +119,33 @@ function close_webver() {
     dialog_place.innerHTML = "";
     dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">Help?</a>`;
 }
+
+// Jukebox
+/*
+var display = document.getElementById("jukebox-display");
+var song = 1;
+
+function stop_song() {
+    display.innerText = "STOPPED";
+}
+
+function pause_song() {
+    display.innerText = "PAUSED";
+}
+
+function select_song(num) {
+    stop_song();
+    song = num;
+}
+
+function play_song() {
+    switch(song) {
+        case 1:
+            display.innerText = "PLAYING TRACK 01"
+            break;
+        case 2:
+            display.innerText = "PLAYING TRACK 02"
+            break;
+    }
+}
+*/

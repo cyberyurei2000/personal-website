@@ -2,6 +2,8 @@
     --black: #000000;
     --white: #ffffff;
     /* ----------J-Alert colors---------- */
+    --alert-background: rgba(0, 0, 0, 0.8);
+    --alert-top: rgba(224, 18, 19, 0.850);
     --alert-red: #e01213;
     --alert-yellow: #faed4c;
     --mobile-alert-red: #ce495e;
@@ -29,7 +31,7 @@
 }
 
 .alert {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--alert-background);
     color: var(--white);
     font-family: "MS UI Gothic";
     font-size: 18pt;
@@ -44,7 +46,7 @@
 }
 
 .alert-top {
-    background-color: var(--alert-red);
+    background-color: var(--alert-top);
     width: 100%;
     padding-bottom: 2px;
 }
@@ -54,8 +56,8 @@
 }
 
 .alert-top-additional {
-    background-color: aliceblue;
-    color: black;
+    background-color: #f0f8ff;
+    color: var(--black);
     font-size: 14pt;
     text-shadow: none;
     display: none;

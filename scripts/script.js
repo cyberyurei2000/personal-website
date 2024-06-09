@@ -96,7 +96,7 @@ function display_webver() {
                 <td class="about-dialog-content">
                     <div class="content-text-top">
                         <p>サイバー幽霊</p>
-                        <p>Version 2024.04.12</p>
+                        <p>Version 2024.04.12-3</p>
                         <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
                     </div>
                     <div class="content-text-bottom">

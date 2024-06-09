@@ -31,27 +31,6 @@
     text-align: center;
 }
 
-.section-center2 {
-    display: flex;
-    justify-content: center;
-}
-
-.welcome-features {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.features-icon {
-    width: 20px;
-    margin-right: 5px;
-}
-
-.features-text {
-    margin-right: 15px;
-}
-
 .website-button {
     vertical-align: middle;
     margin-left: 5px;

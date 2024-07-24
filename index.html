@@ -5,119 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/content.css">
-    <link rel="stylesheet" href="/styles/fun.css">
     <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
     <title>サイバー幽霊</title>
 </head>
 <body>
-    <header>
-        <div class="mainbar">
-            <a href="/">
-                <strong>サイバー幽霊</strong>
-            </a>
-            <span class="separator">|</span>
-            <a class="mainbar-link" href="/pages/about">About</a>
-            <a class="mainbar-link" href="/pages/projects">Projects</a>
-            <a class="mainbar-link" href="/pages/omake">Omake</a>
-        </div>
-        <details class="mainbar-mobile">
-            <summary>
-                <a href="/">
-                    <strong>サイバー幽霊</strong>
-                </a>
-                <span class="marker">▾</span>
-            </summary>
-            <div class="mainbar-dropdown">
-                <a href="/pages/about">
-                    <p class="mainbar-dropdown-link">
-                        <span>About</span>
-                    </p>
-                </a>
-                <a href="/pages/projects">
-                    <p class="mainbar-dropdown-link">
-                        <span>Projects</span>
-                    </p>
-                </a>
-                <a href="/pages/omake">
-                    <p class="mainbar-dropdown-link">
-                        <span>Omake</span>
-                    </p>
-                </a>
+    <div class="site-container">
+        <header>
+            <h1 class="site-title">
+                <a href="/">サイバー幽霊</a>
+            </h1>
+        </header>
+        <aside class="sidebar">
+            <ul class="sidebar-items">
+                <li>
+                    <a href="/pages/about">About</a>
+                </li>
+                <li>
+                    <a href="/pages/projects">Projects</a>
+                </li>
+                <li>
+                    <a href="/pages/omake">Omake</a>
+                </li>
+            </ul>
+            <div class="clock">
+                <span class="clock-text">DIGITAL CLOCK</span>
+                <div class="clock-display">
+                    <img class="clock-icon" src="/resources/images/svg/clock.svg" alt="clock">
+                    <div class="clock-display-text">
+                        <span id="date">23:19</span>
+                    </div>
+                </div>
             </div>
-        </details>
-        <div class="subbar">
-            <marquee class="subbar-fortune">
-                <span id="fortune">No matter where you go, everyone's connected.</span>
-            </marquee>
-            <div class="subbar-clock">
-                <img class="clock-icon" src="/resources/images/svg/clock.svg" alt="clock">
-                <span id="date">23:19</span>
+        </aside>
+        <aside class="navbar">
+            <a class="navbar-link" href="/404">About</a>
+            <a class="navbar-link" href="/404">Project</a>
+            <a class="navbar-link" href="/pages/omake">Omake</a>
+        </aside>
+        <main>
+            <div class="fortune">
+                <marquee>
+                    <span id="fortune">No matter where you go, everyone's connected.</span>
+                </marquee>
             </div>
-        </div>
-    </header>
-    <main>
-        <section>
-            <h1>Welcome!</h1>
-            <p>This is my little place on the internet, I made it as a small hobby and a passing time project.</p>
-            <p>It looks bland since I'm still thinking of what to do with it.</p>
-            <p>Web design is not my passion, so don't mind the mess...</p>
-        </section>
-        <section class="section-center">
-            <span>Website button:</span>
-            <img class="website-button" src="/resources/images/button.gif" alt="button">
-        </section>
-        <section>
-            <h3 class="section-title">Updates</h3>
-            <div class="bbs-list">
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.04.12</span> • Small fixes and improvements
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.04.09</span> • Polish update
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.04.07</span> • Projects page, general improvements and others
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.03.17</span> • New bookmarks and omake section
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.03.10</span> • Small improvements
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.03.09</span> • Omake page and new bookmarks
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.03.01</span> • Credits section
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.02.22</span> • Changelog and minor improvements
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2024.02.19</span> • Website published
-                </p>
-                <p class="bbs-item">
-                    <span class="bbs-date">2023.12.27</span> • Development
-                </p>
+            <div class="content">
+                <section>
+                    <h1>Welcome!</h1>
+                    <p>This is my little place on the internet, I made it as a small hobby and a passing time project.</p>
+                    <p>It looks bland since I'm still thinking of what to do with it.</p>
+                    <p>Web design is not my passion, so don't mind the mess...</p>
+                </section>
+                <section class="section-center">
+                    <span>Website button:</span>
+                    <img class="website-button" src="/resources/images/button.gif" alt="button">
+                </section>
+                <section>
+                    <div class="section-title">Updates</div>
+                    <div class="bbs-box">
+                        <p class="bbs-warning">
+                            <span>Coming soon!</span>
+                        </p>
+                    </div>
+                    <div class="bbs-bottom">
+                        <a class="bbs-link" href="#">Changelog</a>
+                    </div>
+                </section>
+                <section class="section-center">
+                    <img class="website-button" src="/resources/images/buttons/dark-mode.gif" alt="button">
+                    <img class="website-button" src="/resources/images/buttons/phonechump.gif" alt="button">
+                    <img class="website-button" src="/resources/images/buttons/anti-react.gif" alt="button">
+                    <img class="website-button" src="/resources/images/buttons/nodigitaljails.gif" alt="button">
+                </section>
             </div>
-            <div class="bbs-bottom">
-                <a class="bbs-link" href="/pages/updates">Changelog</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="footerbar">
+        </main>
+        <footer>
             <span>
                 <i>© cyber_yurei2000</i>
             </span>
             <span id="webver-trigger">
-                <a href="#" onclick="display_webver()">Help?</a>
+                <a href="#">About this page</a>
             </span>
-        </section>
+        </footer>
         <div id="webver-placeholder"></div>
         <img class="aya" src="/resources/images/aya.webp" alt="aya">
-        <a class="hidden" rel="me" href="https://mastodon.social/@cyber_yurei2000">.</a>
-    </footer>
+    </div>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

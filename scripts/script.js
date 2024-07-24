@@ -12,6 +12,7 @@ var list = [
     "Sir, this is the anime board",
     "This song is pure sex",
     "Please send all complaints to /dev/null",
+    "If we want to be relevant, we must not boycott reality",
     "Thank you, for everything",
     "No matter where you go, everyone's connected.",
     "Remember, with great power comes great responsibility.",
@@ -25,14 +26,14 @@ var list = [
     "You only live once",
     "I know what you were doing...",
     "980 - 1416 - 1523",
-    "I fucking hate MacOS",
     "I have some masochistic tendencies",
     "I SURVIVED THE ENDLESS EIGHT",
     "Let's all love Lain",
     "You can take advantage of everything here, except me",
     "What the hell am I doing here?",
     "No Items, Fox Only, Final Destination",
-    "If you're still alive, you can keep going!"
+    "If you're still alive, you can keep going!",
+    "Time to mix drinks and change lives"
 ]
 var num = Math.floor(Math.random() * list.length);
 
@@ -119,33 +120,3 @@ function close_webver() {
     dialog_place.innerHTML = "";
     dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">Help?</a>`;
 }
-
-// Jukebox
-/*
-var display = document.getElementById("jukebox-display");
-var song = 1;
-
-function stop_song() {
-    display.innerText = "STOPPED";
-}
-
-function pause_song() {
-    display.innerText = "PAUSED";
-}
-
-function select_song(num) {
-    stop_song();
-    song = num;
-}
-
-function play_song() {
-    switch(song) {
-        case 1:
-            display.innerText = "PLAYING TRACK 01"
-            break;
-        case 2:
-            display.innerText = "PLAYING TRACK 02"
-            break;
-    }
-}
-*/

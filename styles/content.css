@@ -1,277 +1,84 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    --grey: #f0f0f09d;
-    --blue: #24283b;
     --red: #b03333;
-    --green: #7ca4a2;
-    --yellow: #e0af68;
-    --purple: #574ac7;
+    --blue: #24283b;
+    --link-hover: #ff1b64;
     --background: #3f455e;
-    --dark: #12141e;
+    --border-in: #535970;
+    --border-out: #171923;
     --shadow: #24283b7c;
     /* ----------Specific page colors---------- */
-    --bbs-background: #12141e52;
+    --bbs-color1: #004040;
+    --bbs-color2: #055252;
+    --bbs-color3: #556d6a;
+    --bbs-link: #7ca4a2;
     --bbs-link-hover: #5ddad3;
-    --project-info-background: #1b509a6b;
-    --warning-background: #b0333389;
-    --warning-shadow: #b0333343;
-    --construction-background: #907449;
-    --construction-shadow: #90744934;
 }
 
 @font-face {
-    font-family: "Digital-7";
-    src: url("/resources/fonts/digital-7.woff2");
+    font-family: "MS Pゴシック";
+    src: url("/resources/fonts/MS-PGothic.ttf");
     font-display: swap;
 }
 
-/* -------------------Home page------------------- */
+/* -------------------Home------------------- */
 .section-center {
     text-align: center;
 }
 
 .website-button {
+    box-shadow: 3px 3px var(--black);
     vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 5px;
 }
 
-.bbs-list {
-    border: 1px solid;
-    border-color: var(--dark);
-    background-color: var(--bbs-background);
+.bbs-box {
+    background-color: var(--bbs-color1);
+    border-left: 5px solid var(--border-out);
+    border-right: 5px solid var(--border-in);
+    border-top: 5px solid var(--border-out);
+    border-bottom: 5px solid var(--border-in);
+    font-family: "MS Pゴシック", "MS PGothic";
+    height: 130px;
+    overflow-x: hidden;
     overflow-y: scroll;
-    height: 100px;
-    max-height: 100px;
+}
+
+.bbs-warning {
+    text-align: center;
 }
 
 .bbs-item {
-    border-top: 0;
-    border-bottom: 2px;
-    border-left: 0;
-    border-right: 0;
-    border-style: solid;
-    border-bottom-color: var(--dark);
+    background-color: var(--bbs-color2);
+    border-left: 2px solid var(--bbs-color3);
+    border-right: 2px solid var(--black);
+    border-top: 2px solid var(--bbs-color3);
+    border-bottom: 2px solid var(--black);
     padding: 5px;
-    margin-top: 0;
-    margin-bottom: 2px;
-    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .bbs-date {
     font-weight: bold;
 }
 
-.bbs-bottom {
-    display: flex;
-    justify-content: right;
-    margin-top: 5px;
-}
-
 .bbs-link {
-    color: var(--green);
+    color: var(--bbs-link);
+    margin-right: 5px;
 }
 
 .bbs-link:hover {
     color: var(--bbs-link-hover);
 }
 
-.hidden {
-    color: var(--background);
-    text-shadow: none;
-    visibility: hidden;
-}
-
-/* -------------------About page------------------- */
-.persona {
-    width: 100px;
-    border-radius: 5%;
-    box-shadow: 5px 5px var(--dark);
-    display: block;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.favicon {
-    width: 64px;
-    margin-left: 10px;
-}
-
-.faq-question {
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-/* -------------------Projects page------------------- */
-.project-image-container {
-    background-color: #12141e8e;
-}
-
-.project-image {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media(max-width: 720px) {
-    .project-image {
-        width: 100%;
-    }
-}
-
-.project-info {
-    background-color: var(--project-info-background);
+.bbs-bottom {
     display: flex;
-    justify-content: space-between;
-    padding: 8px;
+    justify-content: right;
     margin-top: 5px;
-    margin-bottom: 0;
-}
-
-/* -------------------Jukebox page------------------- */
-/*
-.jukebox-display {
-    background-color: #202020;
-    color: #b0f0c0;
-    font-family: "Digital-7";
-    font-size: 24px;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-.jukebox-controls {
-    margin-top: 8px;
-}
-
-.jukebox-controls > summary {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.jukebox-controls-button {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.jukebox-controls-icon {
-    width: 10px;
-}
-
-.jukebox-marker {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.jukebox-dropdown {
-    background-color: var(--dropdown-background);
-    padding-top: 3px;
-    padding-bottom: 13px;
-    margin-top: 12px;
-}
-
-.song-item {
-    appearance: none;
-    margin-bottom: 20px;
-}
-
-.song-item + label {
-    cursor: pointer;
-}
-
-.song-item:checked + label {
-    background: var(--background);
-    outline: 5px solid var(--background);
-}
-*/
-/* -------------------Shrines landing page------------------- */
-.shrine-link {
-    border-right: 4px solid;
-    border-color: var(--dark);
-    position: relative;
-    text-align: center;
-}
-
-.shrine-link-text {
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(254, 250, 250);
-    text-shadow: 5px var(--dark);
-    left: 42px;
-    bottom: 11px;
-}
-
-/* -------------------Omake page------------------- */
-.omake-list details {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.omake-list li {
-    margin-bottom: 10px;
-}
-
-.omake-container {
-    /* Empty */
-}
-
-.omake-title {
-    margin-top: 15px;
-}
-
-.omake-link {
-    color: var(--red);
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.omake-note {
-    margin-top: 5px;
-    margin-bottom: 3px;
-}
-
-.omake-console {
-    background-color: var(--black);
-    border: 1px solid var(--grey);
-    font-family: monospace;
-    font-size: small;
-    text-align: left;
-    height: 2rem;
-    line-height: 2rem;
-    margin-top: 10px;
-}
-
-.omake-command {
-    margin-left: 10px;
-}
-
-/* ---------------Warning containers (for every page if needed)--------------- */
-.warning-container {
-    padding: 10px;
-    background-color: var(--warning-background);
-    box-shadow: 5px 5px var(--warning-shadow);
-    background-image: url("../resources/images/svg/disclaimer.svg");
-    background-repeat: no-repeat;
-    background-size: 60% 200px;
-    background-position: 110% 70%;
-}
-
-.construction-container {
-    padding: 10px;
-    background-color: var(--construction-background);
-    box-shadow: 5px 5px var(--construction-shadow);
-    background-image: url("../resources/images/svg/construction2.svg");
-    background-repeat: no-repeat;
-    background-size: 60% 200px;
-    background-position: 110% 50%;
-}
-
-.warning-text {
-    text-align: justify;
-    text-justify: inter-word;
+    margin-bottom: 5px;
 }

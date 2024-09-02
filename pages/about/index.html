@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/fun.css">
+    <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
+    <title>About - サイバー幽霊</title>
+</head>
+<body>
+    <div class="site-container">
+        <header>
+            <nav class="mainbar">
+                <a class="site-title" href="/">
+                    <strong>サイバー幽霊</strong>
+                </a>
+                <span class="separator">｜</span>
+                <a class="mainbar-link-active" href="/pages/about">About</a>
+                <a class="mainbar-link" href="/pages/projects">Projects</a>
+                <a class="mainbar-link" href="/pages/omake">Omake</a>
+                <a class="mainbar-link" href="/pages/bookmarks">Bookmarks</a>
+            </nav>
+            <details class="mainbar-mobile">
+                <summary>
+                    <a class="site-title" href="/">
+                        <strong>サイバー幽霊</strong>
+                    </a>
+                    <span class="marker">▾</span>
+                </summary>
+                <div class="mainbar-dropdown">
+                    <a href="/pages/about">
+                        <p class="mainbar-dropdown-link">
+                            <span>• About •</span>
+                        </p>
+                    </a>
+                    <a href="/pages/projects">
+                        <p class="mainbar-dropdown-link">
+                            <span>Projects</span>
+                        </p>
+                    </a>
+                    <a href="/pages/omake">
+                        <p class="mainbar-dropdown-link">
+                            <span>Omake</span>
+                        </p>
+                    </a>
+                    <a href="/pages/bookmarks">
+                        <p class="mainbar-dropdown-link">
+                            <span>Bookmarks</span>
+                        </p>
+                    </a>
+                </div>
+            </details>
+            <div class="secondbar">
+                <marquee class="fortune">
+                    <span id="fortune">No matter where you go, everyone's connected.</span>
+                </marquee>
+                <div class="clock">
+                    <img class="clock-icon" src="/resources/images/svg/clock.svg" alt="clock">
+                    <span id="date">23:19</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section>
+                    <h1>About this website</h1>
+                    <p class="section-text">
+                        I made this website as a small hobby and passing time project to not make my web development knowledge
+                        go to waste (ironically, I hate web development! I still have trauma of node.js and react that I
+                        got from college).
+                    </p>
+                    <p class="section-text">
+                        I started this project after discovering the Melonland forum and seeing some content on Neocities at the
+                        end of 2023, it was based on various quirky websites I've come across over the years.
+                    </p>
+                    <form class="section-text" action="/pages/about/me">
+                        <button type="submit">
+                            <span class="button-text">Go to "About Me"⠀</span>
+                            <span>▾</span>
+                        </button>
+                    </form>
+                </section>
+                <section>
+                    <div class="section-title">Tecnical details</div>
+                    <p class="section-text">
+                        This website was developed with pure html, css and a minimum amount of javascript without any frameworks,
+                        trackers or node.js junk. Javascript is only used for displaying silly fortunes and for the useless clock,
+                        and also for the easter eggs.
+                    </p>
+                    <p class="section-text">
+                        Although it was created with a focus on the desktop, most of the site is responsive to not exclude users
+                        on mobile devices. Even so, I still recommend viewing it on a desktop or any device with a larger screen.
+                    </p>
+                    <p class="section-text">
+                        And it's best viewed on Chromium browsers, it can also been viewed on Firefox but has some inacurracies.
+                        Safari/WebKit is not supported.
+                    </p>
+                    <p class="section-text">
+                        If you want to check out the source code, <a href="https://github.com/cyberyurei2000/personal-website" target="_blank" rel="noopener noreferrer">click here</a>.
+                    </p>
+                    <p class="mini-warning-text">* Just a small warning, the source code is kinda messy.</p>
+                </section>
+                <section>
+                    <div class="section-title">Credits</div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>
+                                    The main Aya Shameimaru picture can be found
+                                    <a href="https://static.wikia.nocookie.net/all-worlds-alliance/images/c/ca/Aya_Shamamieru-Render.png/re
+                                    vision/latest?cb=20190719051105">here</a>.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Aya Shameimaru picture on 404 page: Touhou 10.5 (Team Shangai Alice).
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Aya Shameimaru picture on placeholder/fallback pictures: 幻想人形演舞 (FocalLens).
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <table>
+                        <tr>
+                            <td class="section-text">
+                                The favicon was made based off the FM Towns disc icon from
+                                <a href="https://gekk.info/articles/images/towns/img56.gif">Towns OS</a>.
+                            </td>
+                            <td>
+                                <img class="favicon" src="/resources/images/svg/fmtowns.svg" alt="fm-towns">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <nav class="footerbar">
+                <span>
+                    <i>© cyber_yurei2000</i>
+                </span>
+                <span id="webver-trigger">
+                    <a href="#" onclick="display_webver()">About this page?</a>
+                </span>
+            </nav>
+            <div id="webver-placeholder"></div>
+            <img class="aya" src="/resources/images/aya.webp" alt="aya">
+        </footer>
+    </div>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

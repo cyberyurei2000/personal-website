@@ -33,7 +33,8 @@ var list = [
     "What the hell am I doing here?",
     "No Items, Fox Only, Final Destination",
     "If you're still alive, you can keep going!",
-    "Time to mix drinks and change lives"
+    "Time to mix drinks and change lives",
+    "Did you learn to lie by watching \"TV Senado\"?"
 ]
 var num = Math.floor(Math.random() * list.length);
 
@@ -97,7 +98,7 @@ function display_webver() {
                 <td class="about-dialog-content">
                     <div class="content-text-top">
                         <p>サイバー幽霊</p>
-                        <p>Version 2024.04.12-3</p>
+                        <p>Version 2024.07.24-alpha2</p>
                         <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
                     </div>
                     <div class="content-text-bottom">
@@ -112,11 +113,11 @@ function display_webver() {
     </div>
     `;
 
-    dialog_trigger.innerHTML = `<a href="#">Help?</a>`;
+    dialog_trigger.innerHTML = `<a href="#">About this page?</a>`;
     dialog_place.innerHTML = dialog;
 }
 
 function close_webver() {
     dialog_place.innerHTML = "";
-    dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">Help?</a>`;
+    dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">About this page?</a>`;
 }

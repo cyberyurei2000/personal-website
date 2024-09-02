@@ -37,14 +37,14 @@
 
 .bbs-box {
     background-color: var(--bbs-color1);
+    font-family: "MS Pゴシック", "MS PGothic";
     border-left: 5px solid var(--border-out);
     border-right: 5px solid var(--border-in);
     border-top: 5px solid var(--border-out);
     border-bottom: 5px solid var(--border-in);
-    font-family: "MS Pゴシック", "MS PGothic";
     height: 130px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .bbs-warning {
@@ -81,4 +81,30 @@
     justify-content: right;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+/* -------------------About------------------- */
+.persona {
+    width: 100px;
+    border-radius: 5%;
+    box-shadow: 5px 5px var(--black);
+    display: block;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.favicon {
+    width: 64px;
+    margin-left: 10px;
+}
+
+.faq-box {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 8px;
 }

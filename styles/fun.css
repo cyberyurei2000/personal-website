@@ -1,0 +1,372 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    /* ----------J-Alert colors---------- */
+    --alert-background: rgba(0, 0, 0, 0.8);
+    --alert-top: rgba(224, 18, 19, 0.850);
+    --alert-red: #e01213;
+    --alert-yellow: #faed4c;
+    --mobile-alert-red: #ce495e;
+    --mobile-alert-blue: #1b509a;
+    /* ----------Webver colors---------- */
+    --dialog-black: #000000;
+    --dialog-white: #eeeeee;
+    --dialog-grey: #9a9a9a;
+    --dialog-background: #d5d1c9;
+    --dialog-border: #afadad;
+    --dialog-titlebar: #2a4a8a;
+    --dialog-banner-background: #24283b;
+    --dialog-banner-text: #b03333;
+}
+
+@font-face {
+    font-family: "MS UI Gothic";
+    src: url("/resources/fonts/MS-UIGothic.woff2");
+    font-display: swap;
+}
+
+/* -------------------Fake J-Alert------------------- */
+.alert-trigger:hover {
+    color: var(--alert-yellow);
+}
+
+.alert {
+    background-color: var(--alert-background);
+    color: var(--white);
+    font-family: "MS UI Gothic";
+    font-size: 18pt;
+    text-shadow: 0.5pt 0.5pt var(--black);
+    width: 700px;
+    height: 148px;
+    position: fixed;
+    margin: 5% auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+.alert-top {
+    background-color: var(--alert-top);
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.alert-top-text {
+    margin-left: 130px;
+}
+
+.alert-top-additional {
+    background-color: #f0f8ff;
+    color: var(--black);
+    font-size: 14pt;
+    text-shadow: none;
+    display: none;
+}
+
+.alert-bottom-text {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.alert-bottom-list {
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: var(--alert-yellow);
+}
+
+.alert-map {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0px
+}
+
+.mini-alert {
+    background-color: var(--alert-red);
+    color: var(--white);
+    font-family: "MS UI Gothic";
+    font-size: 22pt;
+    text-shadow: none;
+    width: 230px;
+    padding: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: fixed;
+    margin: 5% auto;
+    top: 500px;
+    left: 0;
+    right: 453px;
+}
+
+.mini-alert-top {
+    margin-left: 3%;
+    margin-bottom: 8%;
+}
+
+.mini-alert-bottom {
+    text-align: end;
+    margin-right: 5%;
+}
+
+.mini-alert-simple {
+    display: none;
+}
+
+@media(max-width: 720px) {
+    .alert {
+        background-color: var(--mobile-alert-blue);
+        color: var(--white);
+        border: 4px solid var(--white);
+        border-radius: 3px;
+        font-family: "MS UI Gothic";
+        font-size: 14pt;
+        text-shadow: 0.5pt 0.5pt var(--black);
+        width: 430px;
+        height: 148px;
+        position: fixed;
+        margin: 5% auto;
+        top: 500px;
+        left: 0;
+        right: 0;
+    }
+
+    .alert-top {
+        background-color: var(--mobile-alert-red);
+        width: 100%;
+        padding-bottom: 2px;
+    }
+
+    .alert-top-text {
+        font-size: 16pt;
+        margin-left: 170px;
+    }
+
+    .alert-bottom {
+        background-color: var(--mobile-alert-blue);
+        width: 97%;
+    }
+
+    .alert-bottom-text {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 142px;
+        color: var(--alert-yellow);
+    }
+
+    .alert-bottom-list {
+        font-weight: bold;
+        margin-top: 8px;
+        margin-left: 142px;
+        color: var(--white);
+    }
+
+    .alert-map {
+        border-right: 4px solid var(--white);
+        width: 130px;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .mini-alert {
+        background-color: var(--alert-red);
+        color: var(--white);
+        font-family: "MS UI Gothic";
+        font-size: 18pt;
+        text-align: center;
+        text-shadow: none;
+        width: 150px;
+        position: fixed;
+        margin: 5% auto;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    .mini-alert-simple {
+        display: contents;
+    }
+
+    .mini-alert-top {
+        display: none;
+    }
+
+    .mini-alert-bottom {
+        display: none;
+    }
+}
+
+/* -------------------Japanese Telop------------------- */
+body.me {
+    animation: opening 2.5s linear 1s, closing 2.5s linear 25s;
+    animation-fill-mode: forwards !important;
+    animation-play-state: paused;
+}
+
+@keyframes opening {
+    from {margin-top: 8px;}
+    to {margin-top: 100px;}
+}
+
+@keyframes closing {
+    from {margin-top: 100px;}
+    to {margin-top: 8px;}
+}
+
+.telop {
+    font-size: 20pt;
+    font-weight: 1000;
+    -webkit-text-stroke: 1px var(--black);
+    text-shadow: 1pt 1pt var(--black);
+    width: 700px;
+    position: fixed;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.telop-title {
+    font-style: italic;
+    text-align: center;
+}
+
+@media(max-width: 900px) {
+    .telop {
+        font-size: 18pt;
+        width: 350px;
+        margin-top: 3%;
+    }
+}
+
+/* Hidden text*/
+.real-text {
+    display: none;
+}
+
+.hidden-text:hover .fake-text {
+    display: none;
+}
+
+.hidden-text:hover .real-text {
+    display: contents;
+}
+
+
+/* -------------------Webver------------------- */
+.about-dialog {
+    background: var(--dialog-background);
+    color: var(--dialog-black);
+    border: 2px solid var(--dialog-border);
+    font-family: "Tahoma, MS Gothic";
+    font-size: 14px;
+    text-shadow: none;
+    min-width: 340px;
+    width: 80%;
+    max-width: 420px;
+    height: 400px;
+    position: fixed;
+    margin: 5% auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+.about-dialog-header {
+    background-color: var(--dialog-titlebar);
+    color: var(--dialog-white);
+    padding: 5px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-dialog-main {
+    /* Empty */
+}
+
+.about-dialog-banner {
+    background-color: var(--dialog-banner-background);
+    width: 100px;
+    height: 373px;
+    display: table-cell;
+    writing-mode: vertical-rl;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.banner-text {
+    font-size: 30px;
+    font-family: "Sazanami Gothic";
+    font-weight: bold;
+    text-shadow: 2px 2px var(--dialog-black);
+    color: var(--dialog-banner-text);
+}
+
+.about-dialog-content {
+    vertical-align: top;
+}
+
+.content-text-top {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.content-text-bottom {
+    margin-left: 10px;
+    margin-top: 90px;
+}
+
+.dialog-button {
+    background: var(--dialog-background);
+    border-bottom-color: var(--dialog-grey);
+    border-right-color: var(--dialog-grey);
+    border-top-color: var(--dialog-white);
+    border-left-color: var(--dialog-white);
+    border-style: outset;
+}
+
+.dialog-button:active {
+    border-style: inset;
+    border-bottom-color: var(--dialog-white);
+    border-right-color: var(--dialog-white);
+    border-top-color: var(--dialog-grey);
+    border-left-color: var(--dialog-grey);
+}
+
+.window-button {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+@-moz-document url-prefix() {
+    .content-text-bottom {
+        margin-left: 10px;
+        margin-top: 85px;
+    }
+
+    .window-button {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+.normal-button {
+    position: relative;
+    float: right;
+    margin-right: 4%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

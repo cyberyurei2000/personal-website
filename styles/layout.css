@@ -3,18 +3,20 @@
     --white: #ffffff;
     --red: #b03333;
     --blue: #24283b;
+    --yellow: #e0af68;
+    --purple: #574ac7;
     --background: #3f455e;
-    --section-background: #2c3044c7;
+    --section-background: #2c30449c;
     --link-hover: #ff1b64;
     --border-in: #535970;
     --border-out: #171923;
     --checkboard-color: #2f3347;
-    --shadow: #24283b7c;
+    --shadow: #00000096;
 }
 
 @font-face {
     font-family: "Sazanami Gothic";
-    src: url("/resources/fonts/sazanami-gothic.woff2");
+    src: url("/resources/fonts/Sazanami-Gothic.woff2");
     font-display: swap;
 }
 
@@ -34,24 +36,25 @@
 body {
     background-color: var(--background);
     background-image: linear-gradient(#3f455e 50%, #232641 100%);
-    color: var(--white);
-    font-family: "MS UIゴシック", "MS UI Gothic";
-    text-shadow: 2px 2px var(--black);
     background-attachment: fixed;
+    font-family: "MS UIゴシック", "MS UI Gothic";
+    color: var(--white);
+    text-shadow: 2px 2px var(--black);
 }
 
 section {
     background-color: var(--section-background);
-    box-shadow: 6px 6px var(--black);
+    box-shadow: 5px 5px var(--black);
     border: var(--border-in) solid 3px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 12px;
 }
 
 section:last-child {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -63,125 +66,160 @@ a:hover {
     color: var(--link-hover);
 }
 
+button {
+    background-color: var(--red);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom-color: var(--black);
+    border-right-color: var(--black);
+    border-top-color: var(--grey);
+    border-left-color: var(--grey);
+    border-style: outset;
+    margin-bottom: 10px;
+}
+
+button:active {
+    border-style: inset;
+    border-bottom-color: var(--grey);
+    border-right-color: var(--grey);
+    border-top-color: var(--black);
+    border-left-color: var(--black);
+}
+
+.button-text {
+    color: var(--white);
+}
+
+@keyframes scroll {
+    from {
+        background-position: top left;
+    } to {
+        background-position: bottom right;
+    }
+}
+
 /* -------------------Layout------------------- */
 .site-container {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 900px;
+}
+
+.mainbar {
     background-color: var(--blue);
     border-left: 3px solid var(--border-in);
     border-right: 3px solid var(--border-out);
     border-top: 3px solid var(--border-in);
     border-bottom: 3px solid var(--border-out);
-    width: 80vw;
-    max-width: 940px;
-    min-width: 340px;
-    display: grid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header {
-    border-left: 1px solid var(--border-in);
-    border-right: 1px solid var(--border-out);
-    border-top: 1px solid var(--border-in);
-    border-bottom: 1px solid var(--border-out);
-}
-
-.sidebar {
-    display: none;
-}
-
-.navbar {
-    border-left: 1px solid var(--border-in);
-    border-right: 1px solid var(--border-out);
-    border-top: 1px solid var(--border-in);
-    border-bottom: 1px solid var(--border-out);
-    font-size: 16px;
-    padding: 6px;
-}
-
-.navbar-link {
-    font-size: 110%;
-    margin-left: 10px;
-}
-
-.section-title {
-    background-color: var(--background);
-    border-left: 3px solid var(--border-in);
-    border-right: 3px solid var(--black);
-    border-top: 3px solid var(--border-in);
-    border-bottom: 3px solid var(--black);
-    padding: 2px;
-    padding-left: 10px;
-    font-size: large;
-    font-weight: bold;
+    padding: 10px;
     margin-bottom: 5px;
 }
 
-footer {
-    border-left: 1px solid var(--border-in);
-    border-right: 1px solid var(--border-out);
-    border-top: 1px solid var(--border-in);
-    border-bottom: 1px solid var(--border-out);
+.mainbar-link {
+    margin-right: 5px;
+}
+
+.mainbar-link-active {
+    margin-right: 5px;
+    border-bottom: 1px solid;
+    box-shadow: 0 2px var(--black);
+}
+
+.mainbar-mobile {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-out);
     padding: 10px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.mainbar-mobile > summary {
+    list-style: none;
+}
+
+.marker {
+    position: relative;
+    float: right;
+}
+
+.mainbar-dropdown {
+    background-color: var(--dropdown-background);
+    font-size: 15px;
+    text-align: center;
+    border-left: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-top: 3px solid var(--border-out);
+    border-bottom: 3px solid var(--border-in);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 12px;
+}
+
+.mainbar-dropdown-link {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.footerbar {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-out);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (min-width: 800px) {
-    .site-container {
-        grid-template-columns: 1fr 3fr;
-    }
-
-    header, footer {
-        grid-column: 1 / -1;
-    }
-
-    .sidebar {
-        border-left: 1px solid var(--border-in);
-        border-top: 1px solid var(--border-in);
-        border-bottom: 1px solid var(--border-out);
-        display: block;
-    }
-
-    .navbar {
+@media(max-width: 800px) {
+    .mainbar {
         display: none;
+    }
+
+    .mainbar-mobile {
+        display: block !important;
     }
 }
 
 /* -------------------Header------------------- */
 .site-title {
-    font-size: 23px;
-    color: var(--red);
     font-family: "Sazanami Gothic";
-    text-shadow: 5px 3px var(--black);
-    margin-left: 20px;
+    color: var(--red);
+    text-shadow: 2px 3px var(--black);
 }
 
-@media screen and (min-width: 800px) {
-    .site-title {
-        font-size: 32px;
-    }
+.secondbar {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-out);
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* -------------------Sidebar------------------- */
-.sidebar-items {
-    font-size: 120%;
-    margin-bottom: 30px;
+.fortune {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .clock {
-    background-color: var(--section-background);
-    outline: 8px solid var(--section-background);
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.clock-text {
-    font-weight: bolder;
-    margin-left: 2px;
-}
-
-.clock-display {
     background-color: #2a1021;
     color: var(--link-hover);
     text-shadow: 3px 3px var(--black);
@@ -189,64 +227,64 @@ footer {
     border-right: 3px solid var(--border-in);
     border-top: 3px solid var(--black);
     border-bottom: 3px solid var(--border-in);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5px;
+    padding: 3px;
+    margin-top: 4px;
+    margin-right: 4px;
     display: flex;
     justify-content: center;
 }
 
 .clock-icon {
-    width: 23px;
+    width: 18px;
     margin-right: 6px;
+    filter: drop-shadow(3px 3px var(--black));
 }
 
-.clock-display-text {
-    font-family: "Font-7";
-    font-size: 35px;
+@media(max-width: 800px) {
+    .site-title {
+        margin-left: 5px;
+    }
 }
 
 /* -------------------Main------------------- */
 main {
-    border-left: 1px solid var(--border-in);
-    border-right: 1px solid var(--border-out);
-    border-top: 1px solid var(--border-in);
-    border-bottom: 1px solid var(--border-out);
-}
-
-.fortune {
     background-color: var(--blue);
-    padding-top: 5px;
-    padding-bottom: 2px;
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-out);
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .content {
-    /*background: repeating-conic-gradient(#2f3347 0% 25%, transparent 0% 50%) 50% / 20px 20px;*/
-    background-image: url("/resources/images/cyberyurei-background1.png");
+    background-image: url("/resources/images/content-background.png");
     background-size: 64px;
     animation: scroll 60s linear infinite;
     border-left: 3px solid var(--border-out);
-    border-top: 2px solid var(--border-out);
-    min-height: 620px;
-    max-height: 620px;
-    overflow-y: auto;
+    border-right: 3px solid var(--border-in);
+    border-top: 3px solid var(--border-out);
+    border-bottom: 3px solid var(--border-in);
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-@keyframes scroll {
-    from {
-        background-position: 0% 0%;
-    } to {
-        background-position: 100% 0%;
-    }
+.section-title {
+    background-color: var(--background);
+    font-size: large;
+    font-weight: bold;
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--black);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--black);
+    padding: 2px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* -------------------Footer------------------- */
-@media(max-width: 1100px) {
-    .aya {
-        display: none;
-    }
-}
-
 .aya {
     filter: drop-shadow(8px 8px var(--black));
     position: fixed;
@@ -255,4 +293,10 @@ main {
     bottom: 0px;
     width: 21%;
     min-width: 200px;
+}
+
+@media(max-width: 800px) {
+    .aya {
+        display: none;
+    }
 }

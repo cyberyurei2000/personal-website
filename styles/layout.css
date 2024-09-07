@@ -232,6 +232,7 @@ button:active {
     margin-right: 4px;
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 }
 
 .clock-icon {
@@ -299,4 +300,20 @@ main {
     .aya {
         display: none;
     }
+}
+
+/* -------------------Misc------------------- */
+.mini-warning-text {
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.mini-info-text {
+    font-size: 12px;
+    color: var(--purple);
+}
+
+.fix-msgothic-encoding {
+    font-family: "Arial, Noto-Sans, sans-serif";
+    font-weight: bold;
 }

@@ -39,8 +39,28 @@ var list = [
 var num = Math.floor(Math.random() * list.length);
 
 const now = new Date();
-//dateElem.innerText = `${now.getFullYear()}/${("0" + (now.getMonth() + 1)).slice(-2)}/${("0" + now.getDate()).slice(-2)} • ${("0" + now.getHours()).slice(-2)}:${("0" + now.getMinutes()).slice(-2)}`;
-dateElem.innerText = `${("0" + now.getHours()).slice(-2)}:${("0" + now.getMinutes()).slice(-2)}`;
+
+function getTime() {
+    return new Date().toLocaleTimeString(
+        "en-GB", {
+            hour12: false,
+            hour: "numeric",
+            minute: "numeric"
+        }
+    ).toString();
+}
+
+function setTime() {
+    var time = getTime();
+    if(dateElem.innerText.split(":").length === 1) {
+        dateElem.innerText = time;
+    } else {
+        dateElem.innerText = time.split(':').join(' ');
+    }
+}
+setInterval(setTime, 1000);
+setTime();
+
 switch(month) {
     case 12:
         switch(day) {
@@ -78,6 +98,7 @@ switch(month) {
 // Webver
 var dialog_place = document.getElementById("webver-placeholder");
 var dialog_trigger = document.getElementById("webver-trigger");
+var version = "2024.09.03-alpha3"
 
 function display_webver() {
     let dialog = `
@@ -98,7 +119,7 @@ function display_webver() {
                 <td class="about-dialog-content">
                     <div class="content-text-top">
                         <p>サイバー幽霊</p>
-                        <p>Version 2024.07.24-alpha2</p>
+                        <p>Version ${version}</p>
                         <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
                     </div>
                     <div class="content-text-bottom">

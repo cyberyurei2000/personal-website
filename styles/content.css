@@ -14,11 +14,12 @@
     --bbs-color3: #556d6a;
     --bbs-link: #7ca4a2;
     --bbs-link-hover: #5ddad3;
+    --project-info-background: #1b509a6b;
 }
 
 @font-face {
     font-family: "MS Pゴシック";
-    src: url("/resources/fonts/MS-PGothic.ttf");
+    src: url("/resources/fonts/MS-PGothic.woff2");
     font-display: swap;
 }
 
@@ -107,4 +108,31 @@
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 8px;
+}
+
+/* -------------------Projects page------------------- */
+.project-image-container {
+    background-color: #12141e8e;
+}
+
+.project-image {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 720px) {
+    .project-image {
+        width: 100%;
+    }
+}
+
+.project-info {
+    background-color: var(--project-info-background);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 0;
 }

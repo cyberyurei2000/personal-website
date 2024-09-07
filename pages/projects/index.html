@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/fun.css">
+    <link rel="shortcut icon" href="/resources/images/fmtowns.ico" type="image/x-icon">
+    <title>Projects - サイバー幽霊</title>
+</head>
+<body>
+    <div class="site-container">
+        <header>
+            <nav class="mainbar">
+                <a class="site-title" href="/">
+                    <strong>サイバー幽霊</strong>
+                </a>
+                <span class="separator">｜</span>
+                <a class="mainbar-link" href="/pages/about">About</a>
+                <a class="mainbar-link-active" href="/pages/projects">Projects</a>
+                <a class="mainbar-link" href="/pages/omake">Omake</a>
+                <a class="mainbar-link" href="/pages/bookmarks">Bookmarks</a>
+            </nav>
+            <details class="mainbar-mobile">
+                <summary>
+                    <a class="site-title" href="/">
+                        <strong>サイバー幽霊</strong>
+                    </a>
+                    <span class="marker">▾</span>
+                </summary>
+                <div class="mainbar-dropdown">
+                    <a href="/pages/about">
+                        <p class="mainbar-dropdown-link">
+                            <span>About</span>
+                        </p>
+                    </a>
+                    <a href="/pages/projects">
+                        <p class="mainbar-dropdown-link">
+                            <span>• Projects •</span>
+                        </p>
+                    </a>
+                    <a href="/pages/omake">
+                        <p class="mainbar-dropdown-link">
+                            <span>Omake</span>
+                        </p>
+                    </a>
+                    <a href="/pages/bookmarks">
+                        <p class="mainbar-dropdown-link">
+                            <span>Bookmarks</span>
+                        </p>
+                    </a>
+                </div>
+            </details>
+            <div class="secondbar">
+                <marquee class="fortune">
+                    <span id="fortune">No matter where you go, everyone's connected.</span>
+                </marquee>
+                <div class="clock">
+                    <img class="clock-icon" src="/resources/images/svg/clock.svg" alt="clock">
+                    <span id="date">23:19</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section>
+                    <h1>Projects</h1>
+                    <p>
+                        Here I'll be posting some projects I've created, which most were made during my time at college. I don't
+                        program anymore, so probably anything new that will be posted here in the future will probably be some
+                        scripts or small programs.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="section-title">mpv-osc-clock</h3>
+                    <div class="project-image-container">
+                        <img
+                            class="project-image"
+                            src="/resources/images/screenshot_osc-clock.webp"
+                            alt="dotfiles"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span>mpv plugin</span>
+                        <a href="https://github.com/cyberyurei2000/mpv-osc-clock">Link</a>
+                    </div>
+                    <p>Displays the system clock as an on-screen clock in mpv.</p>
+                    <p>
+                        Inspired by japanese tv, I originally made it to find out how to develop plugins for mpv,
+                        it turned out to be very useful for me in the end.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="section-title">vcr</h3>
+                    <div class="project-image-container">
+                        <img
+                            class="project-image"
+                            src="https://raw.githubusercontent.com/cyberyurei2000/scripts/master/docs/screenshot_vcr.png"
+                            alt="dotfiles"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span>Windows | Linux</span>
+                        <a href="https://github.com/cyberyurei2000/scripts">Link</a>
+                    </div>
+                    <p>Script to play a video stream in mpv while recording automatically.</p>
+                    <p>I developed this to record IPTV streams of tv channels from others countries to show to my friends.</p>
+                </section>
+                <section>
+                    <h3 class="section-title">dotfiles</h3>
+                    <div class="project-image-container">
+                        <img
+                            class="project-image"
+                            src="https://raw.githubusercontent.com/cyberyurei2000/dotfiles/master/docs/screenshot_linux.png"
+                            alt="dotfiles"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span>Windows | Linux</span>
+                        <a href="https://github.com/cyberyurei2000/dotfiles">Link</a>
+                    </div>
+                    <p>My configuration files and scripts for Windows and Linux.</p>
+                    <p>(I don't know if this one counts as a project, but I don't care...)</p>
+                </section>
+                <section>
+                    <h3 class="section-title">pyImeji</h3>
+                    <div class="project-image-container">
+                        <img
+                            class="project-image"
+                            src="https://raw.githubusercontent.com/cyberyurei2000/pyImeji/master/docs/screenshot2.png"
+                            alt="dotfiles"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span>Cross-platform (Python)</span>
+                        <a href="https://github.com/cyberyurei2000/pyImeji">Link</a>
+                    </div>
+                    <p>Python script to apply Low-pass, High-pass and Median filter to an image.</p>
+                    <p>
+                        I made this program for a college assignment in which I needed to execute a script in R that was quite
+                        heavy for my laptop at the time, so I created this Python version to get the assignment done.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="section-title">simple-search</h3>
+                    <div class="project-image-container">
+                        <img
+                            class="project-image"
+                            src="https://raw.githubusercontent.com/cyberyurei2000/simple-search/master/docs/screenshot.png"
+                            alt="dotfiles"
+                        >
+                    </div>
+                    <div class="project-info">
+                        <span>Cross-platform (Python)</span>
+                        <a href="https://github.com/cyberyurei2000/simple-search">Link</a>
+                    </div>
+                    <p>A simple search tool for my college project made with Python and QT.</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <nav class="footerbar">
+                <span>
+                    <i>© cyber_yurei2000</i>
+                </span>
+                <span id="webver-trigger">
+                    <a href="#" onclick="display_webver()">About this page?</a>
+                </span>
+            </nav>
+            <div id="webver-placeholder"></div>
+            <img class="aya" src="/resources/images/aya.webp" alt="aya">
+        </footer>
+    </div>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

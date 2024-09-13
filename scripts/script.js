@@ -98,7 +98,7 @@ switch(month) {
 // Webver
 var dialog_place = document.getElementById("webver-placeholder");
 var dialog_trigger = document.getElementById("webver-trigger");
-var version = "2024.09.03-alpha3"
+var version = "2024.09.13-alpha4"
 
 function display_webver() {
     let dialog = `

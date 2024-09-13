@@ -14,7 +14,12 @@
     --bbs-color3: #556d6a;
     --bbs-link: #7ca4a2;
     --bbs-link-hover: #5ddad3;
+    --project-image-background: #12141e8e;
     --project-info-background: #1b509a6b;
+    --warning-background: #b0333389;
+    --warning-shadow: #b0333343;
+    --construction-background: #907449;
+    --construction-shadow: #90744934;
 }
 
 @font-face {
@@ -34,6 +39,12 @@
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
+}
+
+.cover {
+    filter: drop-shadow(8px 8px var(--black));
+    width: 100%;
+    max-width: 300px !important;
 }
 
 .bbs-box {
@@ -112,7 +123,11 @@
 
 /* -------------------Projects page------------------- */
 .project-image-container {
-    background-color: #12141e8e;
+    background-color: var(--project-image-background);
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
 }
 
 .project-image {
@@ -130,9 +145,46 @@
 
 .project-info {
     background-color: var(--project-info-background);
+    border-left: 3px solid var(--border-in);
+    border-top: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-bottom: 3px solid var(--border-out);
     display: flex;
     justify-content: space-between;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 0;
+}
+
+/* -------------------Bookmarks page------------------- */
+.bookmark-section {
+    padding: 8px;
+}
+
+.bookmark-container:last-child {
+    margin-bottom: 10px;
+}
+
+.bookmark-link {
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+/* ---------------Misc.--------------- */
+.warning-container {
+    padding: 10px;
+    background-color: var(--warning-background);
+    background-image: url("../resources/images/svg/disclaimer.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 200px;
+    background-position: 110% 70%;
+}
+
+.section-construction {
+    padding: 8px;
+    background-color: var(--construction-background);
+    background-image: url("../resources/images/svg/construction.svg");
+    background-repeat: no-repeat;
+    background-size: 60% 200px;
+    background-position: 110% 50%;
 }

@@ -6,6 +6,7 @@
     --yellow: #e0af68;
     --purple: #574ac7;
     --background: #3f455e;
+    --background2: #232641;
     --section-background: #2c30449c;
     --link-hover: #ff1b64;
     --border-in: #535970;
@@ -27,15 +28,15 @@
 }
 
 @font-face {
-    font-family: "Font-7";
-    src: url("/resources/fonts/digital-7.woff2");
+    font-family: "Digital-7";
+    src: url("/resources/fonts/Digital-7_Mono.woff2");
     font-display: swap;
 }
 
 /* -------------------Base------------------- */
 body {
     background-color: var(--background);
-    background-image: linear-gradient(#3f455e 50%, #232641 100%);
+    background-image: linear-gradient(var(--background) 50%, var(--background2) 100%);
     background-attachment: fixed;
     font-family: "MS UIゴシック", "MS UI Gothic";
     color: var(--white);
@@ -88,6 +89,15 @@ button:active {
 
 .button-text {
     color: var(--white);
+}
+
+hr {
+    border-left: 2px solid var(--border-out);
+    border-top: 2px solid var(--border-out);
+    border-right: 2px solid var(--border-in);
+    border-bottom: 2px solid var(--border-in);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @keyframes scroll {
@@ -148,7 +158,9 @@ button:active {
 }
 
 .mainbar-dropdown {
-    background-color: var(--dropdown-background);
+    background-image: url("/resources/images/content-background.png");
+    background-size: 48px;
+    animation: scroll 30s linear infinite;
     font-size: 15px;
     text-align: center;
     border-left: 3px solid var(--border-out);
@@ -160,8 +172,18 @@ button:active {
     margin-top: 12px;
 }
 
+.mainbar-dropdown-list {
+    background-color: var(--section-background);
+    box-shadow: 5px 5px var(--black);
+    border: var(--border-in) solid 3px;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
 .mainbar-dropdown-link {
-    margin-top: 6px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -222,6 +244,8 @@ button:active {
 .clock {
     background-color: #2a1021;
     color: var(--link-hover);
+    font-family: "Digital-7";
+    font-size: 18px;
     text-shadow: 3px 3px var(--black);
     border-left: 3px solid var(--black);
     border-right: 3px solid var(--border-in);

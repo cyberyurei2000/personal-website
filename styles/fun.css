@@ -209,13 +209,19 @@ body.me {
 }
 
 @keyframes opening {
-    from {margin-top: 8px;}
-    to {margin-top: 100px;}
+    from {
+        margin-top: 8px;
+    } to {
+        margin-top: 100px;
+    }
 }
 
 @keyframes closing {
-    from {margin-top: 100px;}
-    to {margin-top: 8px;}
+    from {
+        margin-top: 100px;
+    } to {
+        margin-top: 8px;
+    }
 }
 
 .telop {
@@ -280,7 +286,9 @@ body.me {
 }
 
 .about-dialog-header {
-    background-color: var(--dialog-titlebar);
+    background: rgb(10,36,106);
+    background: linear-gradient(90deg, rgba(10,36,106,1) 30%, rgba(166,202,240,1) 100%);
+    border-bottom: 1px solid var(--dialog-border);
     color: var(--dialog-white);
     padding: 5px;
     padding-bottom: 2px;

@@ -3,8 +3,12 @@
 }
 
 /* -------------------Warning------------------- */
+form {
+    display: inline-block;
+}
+
 .content-warning {
-    background-image: url("/resources/images/warning-background.png");
+    background-image: url("/resources/images/warning-background.webp");
 }
 
 .section-warning {

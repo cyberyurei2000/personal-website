@@ -124,9 +124,83 @@ section hr {
     border-left: 3px solid var(--border-in);
     border-right: 3px solid var(--border-out);
     border-top: 3px solid var(--border-in);
+    border-bottom: 2px solid var(--border-out);
+    padding: 8px;
+    position: relative;
+}
+
+.mainbar-banner {
+    background-color: var(--black);
+    border-left: 4px solid var(--border-out);
+    border-top: 4px solid var(--border-out);
+    border-right: 4px solid var(--border-in);
+    border-bottom: 4px solid var(--border-in);
+    max-height: 250px;
+}
+
+.banner {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-mobile {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.mainbar-nav {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 2px solid var(--border-in);
     border-bottom: 3px solid var(--border-out);
-    padding: 10px;
-    margin-bottom: 5px;
+    padding-bottom: 2px;
+}
+
+.mainbar-nav-content {
+    margin-left: 10px !important;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainbar-dropdown-message {
+    font-size: 12px;
+    display: none;
+}
+
+.mainbar-dropdown {
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    display: none;
+}
+
+.mainbar-dropdown-content {
+    background-image: url("/resources/images/content-background.webp");
+    background-size: 48px;
+    animation: scroll 30s linear infinite;
+    font-size: 15px;
+    text-align: center;
+    border-left: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-top: 3px solid var(--border-out);
+    border-bottom: 3px solid var(--border-in);
+}
+
+.mainbar-dropdown-links {
+    background-color: var(--section-background);
+    box-shadow: 5px 5px var(--black);
+    border: var(--border-in) solid 3px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .mainbar-link {
@@ -139,51 +213,6 @@ section hr {
     box-shadow: 0 2px var(--black);
 }
 
-.mainbar-mobile {
-    background-color: var(--blue);
-    border-left: 3px solid var(--border-in);
-    border-right: 3px solid var(--border-out);
-    border-top: 3px solid var(--border-in);
-    border-bottom: 3px solid var(--border-out);
-    padding: 10px;
-    margin-bottom: 5px;
-    display: none;
-}
-
-.mainbar-mobile > summary {
-    list-style: none;
-}
-
-.marker {
-    position: relative;
-    float: right;
-}
-
-.mainbar-dropdown {
-    background-image: url("/resources/images/content-background.png");
-    background-size: 48px;
-    animation: scroll 30s linear infinite;
-    font-size: 15px;
-    text-align: center;
-    border-left: 3px solid var(--border-out);
-    border-right: 3px solid var(--border-in);
-    border-top: 3px solid var(--border-out);
-    border-bottom: 3px solid var(--border-in);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 12px;
-}
-
-.mainbar-dropdown-list {
-    background-color: var(--section-background);
-    box-shadow: 5px 5px var(--black);
-    border: var(--border-in) solid 3px;
-    margin-top: 2px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
 .mainbar-dropdown-link {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -193,28 +222,41 @@ section hr {
     background-color: var(--blue);
     border-left: 3px solid var(--border-in);
     border-right: 3px solid var(--border-out);
-    border-top: 3px solid var(--border-in);
+    border-top: 2px solid var(--border-in);
     border-bottom: 3px solid var(--border-out);
     padding: 10px;
-    margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 @-moz-document url-prefix() {
-    .mainbar {
+    .mainbar-nav {
         font-weight: bolder;
     }
 }
 
-@media(max-width: 800px) {
-    .mainbar {
+@media(max-width: 720px) {
+    .mainbar-content-links {
         display: none;
     }
 
-    .mainbar-mobile {
-        display: block !important;
+    .mainbar-dropdown-message {
+        display: block;
+    }
+
+    .mainbar-dropdown {
+        display: block;
+    }
+}
+
+@media(max-width: 525px) {
+    .banner {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
     }
 }
 
@@ -223,50 +265,6 @@ section hr {
     font-family: "Sazanami Gothic";
     color: var(--red);
     text-shadow: 2px 3px var(--black);
-}
-
-.secondbar {
-    background-color: var(--blue);
-    border-left: 3px solid var(--border-in);
-    border-right: 3px solid var(--border-out);
-    border-top: 3px solid var(--border-in);
-    border-bottom: 3px solid var(--border-out);
-    padding-bottom: 3px;
-}
-
-.secondbar-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.secondbar-dropdown-box {
-    padding: 6px;
-    padding-bottom: 3px;
-}
-
-.secondbar-dropdown-content {
-    background-image: url("/resources/images/content-background2.png");
-    background-size: 48px;
-    animation: scroll 30s linear infinite;
-    font-size: 15px;
-    text-align: center;
-    border-left: 3px solid var(--border-out);
-    border-right: 3px solid var(--border-in);
-    border-top: 3px solid var(--border-out);
-    border-bottom: 3px solid var(--border-in);
-}
-
-.fortune {
-    background-color: var(--blue);
-    border-left: 3px solid var(--border-out);
-    border-top: 3px solid var(--border-out);
-    border-right: 3px solid var(--border-in);
-    border-bottom: 3px solid var(--border-in);
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
 }
 
 .clock {
@@ -311,7 +309,7 @@ main {
 }
 
 .content {
-    background-image: url("/resources/images/content-background.png");
+    background-image: url("/resources/images/content-background.webp");
     background-size: 64px;
     animation: scroll 60s linear infinite;
     border-left: 3px solid var(--border-out);
@@ -338,6 +336,29 @@ main {
 }
 
 /* -------------------Footer------------------- */
+.fortunebar {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 2px solid var(--border-out);
+    margin-top: 10px;
+    padding-bottom: 3px;
+}
+
+.fortune {
+    background-color: var(--blue);
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 .aya {
     filter: drop-shadow(8px 8px var(--black));
     position: fixed;

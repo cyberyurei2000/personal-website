@@ -12,61 +12,59 @@
 <body>
     <div class="site-container">
         <header>
-            <nav class="mainbar">
-                <a class="site-title" href="/">
-                    <strong>サイバー幽霊</strong>
-                </a>
-                <span class="separator">｜</span>
-                <a class="mainbar-link" href="/pages/about">About</a>
-                <a class="mainbar-link-active" href="/pages/projects">Projects</a>
-                <a class="mainbar-link" href="/pages/omake">Omake</a>
-                <a class="mainbar-link" href="/pages/bookmarks">Bookmarks</a>
-            </nav>
-            <details class="mainbar-mobile">
-                <summary>
-                    <a class="site-title" href="/">
-                        <strong>サイバー幽霊</strong>
+            <div class="mainbar">
+                <div class="mainbar-banner">
+                    <a href="/">
+                        <img class="banner" src="/resources/images/banner.webp" alt="banner">
+                        <img class="banner-mobile" src="/resources/images/banner-small.webp" alt="banner-sm">
                     </a>
-                    <span class="marker">▾</span>
-                </summary>
-                <div class="mainbar-dropdown">
-                    <div class="mainbar-dropdown-list">
-                        <a href="/pages/about">
-                            <p class="mainbar-dropdown-link">
-                                <span>About</span>
-                            </p>
-                        </a>
-                        <a href="/pages/projects">
-                            <p class="mainbar-dropdown-link">
-                                <span>• Projects •</span>
-                            </p>
-                        </a>
-                        <a href="/pages/omake">
-                            <p class="mainbar-dropdown-link">
-                                <span>Omake</span>
-                            </p>
-                        </a>
-                        <a href="/pages/bookmarks">
-                            <p class="mainbar-dropdown-link">
-                                <span>Bookmarks</span>
-                            </p>
-                        </a>
-                    </div>
                 </div>
-            </details>
-            <details class="secondbar">
-                <summary class="secondbar-content">
-                    <marquee class="fortune">
-                        <span id="fortune">No matter where you go, everyone's connected.</span>
-                    </marquee>
+            </div>
+            <details class="mainbar-nav">
+                <summary class="mainbar-nav-content">
+                    <nav class="mainbar-content-links">
+                        <a href="/">Home</a>
+                        <span class="separator">｜</span>
+                        <a class="mainbar-link" href="/pages/about">About</a>
+                        <a class="mainbar-link-active" href="/pages/projects">Projects</a>
+                        <a class="mainbar-link" href="/pages/omake">Omake</a>
+                        <a class="mainbar-link" href="/pages/bookmarks">Bookmarks</a>
+                    </nav>
+                    <span class="mainbar-dropdown-message">Click here to display the menu ↓</span>
                     <div class="clock">
                         <img class="clock-icon" src="/resources/images/svg/clock.svg" alt="clock">
                         <span id="date">23:19</span>
                     </div>
                 </summary>
-                <div class="secondbar-dropdown-box">
-                    <div class="secondbar-dropdown-content">
-                        <p>Secret Menu • Under Construction</p>
+                <div class="mainbar-dropdown">
+                    <div class="mainbar-dropdown-content">
+                        <div class="mainbar-dropdown-links">
+                            <a href="/">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Home</span>
+                                </p>
+                            </a>
+                            <a href="/pages/about">
+                                <p class="mainbar-dropdown-link">
+                                    <span>About</span>
+                                </p>
+                            </a>
+                            <a href="/pages/projects">
+                                <p class="mainbar-dropdown-link">
+                                    <span>• Projects •</span>
+                                </p>
+                            </a>
+                            <a href="/pages/omake">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Omake</span>
+                                </p>
+                            </a>
+                            <a href="/pages/bookmarks">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Bookmarks</span>
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </details>
@@ -92,7 +90,7 @@
                     </div>
                     <div class="project-info">
                         <span>mpv plugin</span>
-                        <a href="https://github.com/cyberyurei2000/mpv-osc-clock">Link</a>
+                        <a href="https://github.com/cyberyurei2000/mpv-osc-clock" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                     <p>Displays the system clock as an on-screen clock in mpv.</p>
                     <p>
@@ -111,7 +109,7 @@
                     </div>
                     <div class="project-info">
                         <span>Windows | Linux</span>
-                        <a href="https://github.com/cyberyurei2000/scripts">Link</a>
+                        <a href="https://github.com/cyberyurei2000/scripts" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                     <p>Script to play a video stream in mpv while recording automatically.</p>
                     <p>I developed this to record IPTV streams of tv channels from others countries to show to my friends.</p>
@@ -127,7 +125,7 @@
                     </div>
                     <div class="project-info">
                         <span>Windows | Linux</span>
-                        <a href="https://github.com/cyberyurei2000/dotfiles">Link</a>
+                        <a href="https://github.com/cyberyurei2000/dotfiles" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                     <p>My configuration files and scripts for Windows and Linux.</p>
                     <p>(I don't know if this one counts as a project, but I don't care...)</p>
@@ -143,7 +141,7 @@
                     </div>
                     <div class="project-info">
                         <span>Cross-platform (Python)</span>
-                        <a href="https://github.com/cyberyurei2000/pyImeji">Link</a>
+                        <a href="https://github.com/cyberyurei2000/pyImeji" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                     <p>Python script to apply Low-pass, High-pass and Median filter to an image.</p>
                     <p>
@@ -162,7 +160,7 @@
                     </div>
                     <div class="project-info">
                         <span>Cross-platform (Python)</span>
-                        <a href="https://github.com/cyberyurei2000/simple-search">Link</a>
+                        <a href="https://github.com/cyberyurei2000/simple-search" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                     <p>A simple search tool for my college project made with Python and QT.</p>
                     <p>Also made this project for college, but I don't recommend use it over professional search tools.</p>
@@ -170,11 +168,18 @@
             </div>
         </main>
         <footer>
+            <div class="fortunebar">
+                <marquee class="fortune">
+                    <span id="fortune">No matter where you go, everyone's connected.</span>
+                </marquee>
+            </div>
             <nav class="footerbar">
                 <span>
                     <i>© cyber_yurei2000</i>
                 </span>
                 <span id="webver-trigger">
+                    <a href="/pages/sitemap/">Sitemap</a>
+                    <span>|</span>
                     <a href="#" onclick="display_webver()">About this page?</a>
                 </span>
             </nav>

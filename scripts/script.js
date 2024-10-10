@@ -98,7 +98,7 @@ switch(month) {
 // Webver
 var dialog_place = document.getElementById("webver-placeholder");
 var dialog_trigger = document.getElementById("webver-trigger");
-var version = "2024.10.05-alpha5"
+var version = "2024.10.10-alpha6"
 
 function display_webver() {
     let dialog = `
@@ -114,7 +114,7 @@ function display_webver() {
         <table class="about-dialog-main" cellspacing="0" cellpadding="0">
             <tr>
                 <td class="about-dialog-banner">
-                    <p class="banner-text">サイバー幽霊</p>
+                    <!--<p class="banner-text">サイバー幽霊</p>-->
                 </td>
                 <td class="about-dialog-content">
                     <div class="content-text-top">
@@ -134,11 +134,19 @@ function display_webver() {
     </div>
     `;
 
-    dialog_trigger.innerHTML = `<a href="#">About this page?</a>`;
+    dialog_trigger.innerHTML = `
+    <a href="/pages/sitemap/">Sitemap</a>
+    <span>|</span>
+    <a href="#">About this page?</a>
+    `;
     dialog_place.innerHTML = dialog;
 }
 
 function close_webver() {
     dialog_place.innerHTML = "";
-    dialog_trigger.innerHTML = `<a href="#" onclick="display_webver()">About this page?</a>`;
+    dialog_trigger.innerHTML = `
+    <a href="/pages/sitemap/">Sitemap</a>
+    <span>|</span>
+    <a href="#" onclick="display_webver()">About this page?</a>
+    `;
 }

@@ -12,61 +12,59 @@
 <body class="me">
     <div class="site-container">
         <header>
-            <nav class="mainbar">
-                <a class="site-title" href="/">
-                    <strong>サイバー幽霊</strong>
-                </a>
-                <span class="separator">｜</span>
-                <a class="mainbar-link-active" href="/pages/about">About</a>
-                <a class="mainbar-link" href="/pages/projects">Projects</a>
-                <a class="mainbar-link" href="/pages/omake">Omake</a>
-                <a class="mainbar-link" href="/pages/bookmarks">Bookmarks</a>
-            </nav>
-            <details class="mainbar-mobile">
-                <summary>
-                    <a class="site-title" href="/">
-                        <strong>サイバー幽霊</strong>
+            <div class="mainbar">
+                <div class="mainbar-banner">
+                    <a href="/">
+                        <img class="banner" src="/resources/images/banner.webp" alt="banner">
+                        <img class="banner-mobile" src="/resources/images/banner-small.webp" alt="banner-sm">
                     </a>
-                    <span class="marker">▾</span>
-                </summary>
-                <div class="mainbar-dropdown">
-                    <div class="mainbar-dropdown-list">
-                        <a href="/pages/about">
-                            <p class="mainbar-dropdown-link">
-                                <span>• About •</span>
-                            </p>
-                        </a>
-                        <a href="/pages/projects">
-                            <p class="mainbar-dropdown-link">
-                                <span>Projects</span>
-                            </p>
-                        </a>
-                        <a href="/pages/omake">
-                            <p class="mainbar-dropdown-link">
-                                <span>Omake</span>
-                            </p>
-                        </a>
-                        <a href="/pages/bookmarks">
-                            <p class="mainbar-dropdown-link">
-                                <span>Bookmarks</span>
-                            </p>
-                        </a>
-                    </div>
                 </div>
-            </details>
-            <details class="secondbar">
-                <summary class="secondbar-content">
-                    <marquee class="fortune">
-                        <span id="fortune">No matter where you go, everyone's connected.</span>
-                    </marquee>
+            </div>
+            <details class="mainbar-nav">
+                <summary class="mainbar-nav-content">
+                    <nav class="mainbar-content-links">
+                        <a href="/">Home</a>
+                        <span class="separator">｜</span>
+                        <a class="mainbar-link-active" href="/pages/about">About</a>
+                        <a class="mainbar-link" href="/pages/projects">Projects</a>
+                        <a class="mainbar-link" href="/pages/omake">Omake</a>
+                        <a class="mainbar-link" href="/pages/bookmarks">Bookmarks</a>
+                    </nav>
+                    <span class="mainbar-dropdown-message">Click here to display the menu ↓</span>
                     <div class="clock">
                         <img class="clock-icon" src="/resources/images/svg/clock.svg" alt="clock">
                         <span id="date">23:19</span>
                     </div>
                 </summary>
-                <div class="secondbar-dropdown-box">
-                    <div class="secondbar-dropdown-content">
-                        <p>Secret Menu • Under Construction</p>
+                <div class="mainbar-dropdown">
+                    <div class="mainbar-dropdown-content">
+                        <div class="mainbar-dropdown-links">
+                            <a href="/">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Home</span>
+                                </p>
+                            </a>
+                            <a href="/pages/about">
+                                <p class="mainbar-dropdown-link">
+                                    <span>• About •</span>
+                                </p>
+                            </a>
+                            <a href="/pages/projects">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Projects</span>
+                                </p>
+                            </a>
+                            <a href="/pages/omake">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Omake</span>
+                                </p>
+                            </a>
+                            <a href="/pages/bookmarks">
+                                <p class="mainbar-dropdown-link">
+                                    <span>Bookmarks</span>
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </details>
@@ -75,7 +73,7 @@
         <main>
             <div class="content">
                 <section>
-                    <h1>About me</h1>
+                    <h1>About myself</h1>
                     <p>
                         I don't know what to say about me, I'm just a shy 20 something years old person, living somewhere in the world.
                         I usually lurk around the internet in my free time.
@@ -89,7 +87,7 @@
                         <div>
                             <h4 class="faq-question">
                                 <span>
-                                    Q: I don't understand some of these quotes displayed in the second header bar.
+                                    Q: I don't understand some of these quotes displayed in the footer,
                                     what is the source of these quotes?
                                 </span>
                             </h4>
@@ -103,8 +101,7 @@
                                 <span>Q: What inspired the design of this website?</span>
                             </h4>
                             <span>
-                                R: It was actually from a website I've forgotten, but I still have some of the design features
-                                in my mind. If I can remember, I'll put it on the 「About this website」 page.
+                                R: It's mostly inspired by 90s and early 2000s designs.
                             </span>
                         </div><hr>
                         <div>
@@ -112,7 +109,7 @@
                                 <span>Q: Why the anime mascot?</span>
                             </h4>
                             <span>
-                                R: Ackchyually, this is not a anime character, it's a videogame character. I put this to make
+                                R: <i>Ackchyually</i>, this is not a anime character, it's a videogame character. I put this to make
                                 the site less blend. It also because theses mascots can infuriate some people.
                             </span>
                         </div><hr>
@@ -147,11 +144,18 @@
             </div>
         </main>
         <footer>
+            <div class="fortunebar">
+                <marquee class="fortune">
+                    <span id="fortune">No matter where you go, everyone's connected.</span>
+                </marquee>
+            </div>
             <nav class="footerbar">
                 <span>
                     <i>© cyber_yurei2000</i>
                 </span>
                 <span id="webver-trigger">
+                    <a href="/pages/sitemap/">Sitemap</a>
+                    <span>|</span>
                     <a href="#" onclick="display_webver()">About this page?</a>
                 </span>
             </nav>

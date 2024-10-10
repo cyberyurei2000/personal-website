@@ -302,7 +302,8 @@ body.me {
 
 .about-dialog-banner {
     background-color: var(--dialog-banner-background);
-    width: 100px;
+    background-image: url("/resources/images/webver.webp");
+    width: 120px;
     height: 373px;
     display: table-cell;
     writing-mode: vertical-rl;

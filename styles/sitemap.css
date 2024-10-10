@@ -1,0 +1,80 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --red: #b03333;
+    --blue: #24283b;
+    --yellow: #e0af68;
+    --purple: #574ac7;
+    --background: #3f455e;
+    --background2: #232641;
+    --section-background: #2c30449c;
+    --link-hover: #ff1b64;
+    --border-in: #dd6464;
+    --border-out: #5c1b1b;
+}
+
+@font-face {
+    font-family: "Sazanami Gothic";
+    src: url("/resources/fonts/Sazanami-Gothic.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MS Pゴシック";
+    src: url("/resources/fonts/MS-PGothic.woff2");
+    font-display: swap;
+}
+
+/* -------------------Base------------------- */
+body {
+    background-color: var(--background);
+    background-image: linear-gradient(var(--background) 50%, var(--background2) 100%);
+    background-attachment: fixed;
+    font-family: "MS Pゴシック", "MS PGothic";
+    color: var(--white);
+    text-shadow: 2px 2px var(--black);
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+hr {
+    border-left: 1px solid #171923;
+    border-top: 1px solid #171923;
+    border-right: 1px solid #535970;
+    border-bottom: 1px solid #535970;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* -------------------Layout------------------- */
+.site-container {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 900px;
+}
+
+header {
+    background-color: var(--red);
+    font-family: "Sazanami Gothic";
+    font-weight: bold;
+    border-left: 3px solid var(--border-in);
+    border-right: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-in);
+    border-bottom: 2px solid var(--border-out);
+    padding: 8px;
+}
+
+.sitemap-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}

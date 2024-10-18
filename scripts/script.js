@@ -34,7 +34,7 @@ var list = [
     "No Items, Fox Only, Final Destination",
     "If you're still alive, you can keep going!",
     "Time to mix drinks and change lives",
-    "Did you learn to lie by watching 「TV Senado」？"
+    "Did you learn to lie by watching 「TV Senado」?"
 ]
 var num = Math.floor(Math.random() * list.length);
 
@@ -98,7 +98,7 @@ switch(month) {
 // Webver
 var dialog_place = document.getElementById("webver-placeholder");
 var dialog_trigger = document.getElementById("webver-trigger");
-var version = "2024.10.10-alpha6"
+var version = "2024.10.18-alpha7";
 
 function display_webver() {
     let dialog = `

@@ -14,6 +14,7 @@
     --border-in: #535970;
     --border-out: #171923;
     --checkboard-color: #2f3347;
+    --image-container-background: #12141e8e;
     --shadow: #00000096;
 }
 
@@ -102,6 +103,11 @@ section hr {
     margin-bottom: 10px;
 }
 
+li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
 ::-webkit-scrollbar {
     background-color: #686d81;
     width: 16px;
@@ -113,6 +119,33 @@ section hr {
     border-top: 2px solid #7d839c;
     border-right: 2px solid #1f2333;
     border-bottom: 2px solid #1f2333;
+}
+
+.image-container {
+    background-color: var(--project-image-background);
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
+}
+
+.image-container img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code-container {
+    background-color: var(--background4);
+    font-family: "Sarasa Mono J", "Noto Mono", "Consolas", "monospace";
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
+    padding: 5px;
+    text-align: left;
+    overflow-wrap: break-word;
 }
 
 @keyframes scroll {
@@ -127,6 +160,12 @@ section hr {
     section button {
         padding: 2px;
         padding-left: 4px;
+    }
+}
+
+@media(max-width: 720px) {
+    .image-container img {
+        width: 100%;
     }
 }
 

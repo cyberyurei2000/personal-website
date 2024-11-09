@@ -141,14 +141,52 @@
 }
 
 /* -------------------About------------------- */
-.persona {
-    width: 100px;
-    border-radius: 5%;
-    box-shadow: 5px 5px var(--black);
-    display: block;
-    margin-left: auto;
-    margin-top: 0;
+.about-card h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.card-info h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-links {
+    margin-bottom: 10px;
+}
+
+.card-links a {
+    margin-left: 3px;
+}
+
+.persona-container {
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
+    width: 80px;
+}
+
+.persona {
+    width: 80px;
 }
 
 .favicon {
@@ -181,10 +219,35 @@
 }
 
 /* -------------------Omake page------------------- */
+.omake-buttons {
+    margin-top: 14px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.omake-buttons button {
+    padding: 0;
+}
+
+.omake-buttons button img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-width: 0px;
+    width: 100%;
+}
+
 .omake-section {
     padding: 8px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.omake-section .image-container {
+    margin-top: 10px;
 }
 
 .omake-container h4 {
@@ -197,13 +260,77 @@
     margin-bottom: 3px;
 }
 
+.omake-container ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
 .omake-container:last-child {
     margin-bottom: 10px;
+}
+
+.omake-covers {
+    background-color: var(--project-image-background);
+    border-left: 3px solid var(--border-out);
+    border-top: 3px solid var(--border-out);
+    border-right: 3px solid var(--border-in);
+    border-bottom: 3px solid var(--border-in);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.omake-cover {
+    position: relative;
+}
+
+.omake-cover img {
+    width: 162px;
+}
+
+.omake-tooltip {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2px;
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+
+.omake-cover:hover .omake-tooltip {
+    display: block;
+}
+
+.omake-tooltip p {
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .omake-list h4 {
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+@media(max-width: 650px) {
+    .omake-buttons {
+        flex-direction: column;
+    }
+
+    .omake-cover {
+        width: 120px;
+    }
+}
+
+@media(max-width: 525px) {
+    .omake-cover {
+        width: 150px;
+    }
 }
 
 /* -------------------Bookmarks page------------------- */

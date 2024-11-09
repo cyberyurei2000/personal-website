@@ -47,7 +47,7 @@ function fake_jalert() {
     /*let audio = new Audio("/resources/sounds/nhk.mp3");*/
     let audio = new Audio("https://files.catbox.moe/zrbomb.mp3");
 
-    jalert_trigger.innerHTML = "<span>Somewhere...</span>"
+    jalert_trigger.innerHTML = "<span>somewhere...</span>"
     fix_audio(audio);
     setTimeout(function() { audio.play() }, 1000);
     setTimeout(function() { jalert_place.innerHTML = mini_alert }, 1100);

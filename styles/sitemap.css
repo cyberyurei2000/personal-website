@@ -93,7 +93,7 @@ header {
     margin-top: -10px !important;
 }
 
-.sitemap-title-hr {
+.sitemap-title-mobile {
     font-family: "Sazanami Gothic";
     font-size: 32px;
     text-shadow: 3px 3px var(--black);
@@ -106,16 +106,15 @@ header {
         right: 20px;
         left: auto;
         bottom: 30px;
-        writing-mode: horizontal-tb;
     }
 
     .sitemap-title {
         display: none;
     }
 
-    .sitemap-title-hr {
+    .sitemap-title-mobile {
         display: block;
-        margin-bottom: 10px;
+        margin-right: 5px;
     }
 
     .sitemap-version {

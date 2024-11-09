@@ -72,34 +72,78 @@
         <main>
             <div class="content">
                 <section>
-                    <h1>Omake</h1>
+                    <h1>Tech stuff</h1>
                     <p>
-                        Omake (oh-mah-keh) is an oft-abused Japanese term used for bonus stuff. This page contains a lot of
-                        random things and resources that I feel like sharing.
+                        You can find here anything tech related that I feel sharing.
                     </p>
-                    <p>This is based on <a href="https://rubenerd.com/omake.xml" target="_blank" rel="noopener noreferrer">Ruben Shade's Omake</a>.</p>
                     <p>
                         <i>Last updated: 2024/11/09</i>
                     </p>
+                    <p class="mini-warning-text">* This page is under construction.</p>
                 </section>
-                <section>
-                    <div class="omake-buttons">
-                        <form action="/pages/omake/media/">
-                            <button type="submit">
-                                <img src="/resources/images/omake/omake-button-media.webp" alt="">
-                            </button>
-                        </form>
-                        <form action="/pages/omake/tv/">
-                            <button>
-                                <img src="/resources/images/omake/omake-button-tv.webp" alt="">
-                            </button>
-                        </form>
-                        <form action="/pages/omake/tech/">
-                            <button>
-                                <img src="/resources/images/omake/omake-button-tech.webp" alt="">
-                            </button>
-                        </form>
-                    </div>
+                <section class="omake-section">
+                    <details open>
+                        <summary>Quick commands</summary>
+                        <p>
+                            This is a collection of quick terminal commands that I put here to share with other people,
+                            and also for me to to take a look at if I forget.
+                        </p>
+                        <section class="warning-container">
+                            <h3>Warning!</h3>
+                            <p class="warning-text">
+                                Run any command below at your own risk! Never blindly type
+                                commands that you found on the internet without making your own
+                                research first. <strong>I'm not responsible for any damage or harm to your computer!</strong>
+                            </p>
+                        </section>
+                        <p>$ = Normal　|　# = Administrator/Root</p>
+                        <div class="omake-list">
+                            <h4>Get the best video and audio quality from youtube (yt-dlp)</h4>
+                            <div class="code-container">
+                                $　yt-dlp -f ”bv+ba” YOUTUBE_URL
+                            </div><hr>
+                            <h4>Increase volume of a media file (ffmpeg)</h4>
+                            <div class="code-container">
+                                $　ffmpeg -i ”MEDIA.in” -af volume=4.0 ”MEDIA.out”
+                            </div><hr>
+                            <h4>Trim a media file (ffmpeg)</h4>
+                            <div class="code-container">
+                                $　ffmpeg -ss 00:00:00 -i "MEDIA.in" -to 00:00:00 -c copy "MEDIA.out"
+                            </div><hr>
+                            <h4>Flip image horizontally (imagemagick)</h4>
+                            <div class="code-container">
+                                $　magick "IMAGE.in" -flop "IMAGE.out"
+                            </div><hr>
+                            <h4>Flip image vertically (imagemagick)</h4>
+                            <div class="code-container">
+                                $　magick "IMAGE.in" -flip "IMAGE.out"
+                            </div><hr>
+                            <h4>Extract a archive file (7zip)</h4>
+                            <div class="code-container">
+                                $　7z x "ARCHIVE.ext"
+                            </div><hr>
+                            <h4>Get all devices IP on a network (nmap)</h4>
+                            <div class="code-container">
+                                #　nmap -sn 000.000.00.000/00
+                            </div><hr>
+                            <h4>Setup with a local account (Windows)</h4>
+                            <div class="code-container">
+                                #>　OOBE\BYPASSNRO
+                            </div><hr>
+                            <h4>Get all used network ports (Linux)</h4>
+                            <div class="code-container">
+                                #　ss -tulpn | grep LISTEN
+                            </div><hr>
+                            <h4>Detach a command from the terminal (Linux)</h4>
+                            <div class="code-container">
+                                $　COMMAND & disown
+                            </div><hr>
+                            <h4>Force logout (Linux)</h4>
+                            <div class="code-container">
+                                $　pkill -KILL -u $USER
+                            </div>
+                        </div>
+                    </details>
                 </section>
             </div>
         </main>

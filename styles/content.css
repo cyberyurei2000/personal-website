@@ -322,14 +322,44 @@
         flex-direction: column;
     }
 
+    .omake-covers {
+        justify-content: left;
+    }
+
     .omake-cover {
         width: 120px;
+    }
+
+    @-moz-document url-prefix() {
+        .omake-covers {
+            gap: 0px;
+        }
+
+        .omake-cover {
+            width: 130px !important;
+        }
+
+        .omake-cover img {
+            width: 150px !important;
+        }
     }
 }
 
 @media(max-width: 525px) {
     .omake-cover {
-        width: 150px;
+        width: 130px;
+        margin-left: 8px;
+    }
+
+    .omake-cover img {
+        width: 145px !important;
+    }
+
+    @-moz-document url-prefix() {
+        .omake-cover {
+            width: 120px;
+            margin-left: 0;
+        }
     }
 }
 

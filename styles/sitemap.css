@@ -109,15 +109,16 @@ header {
     }
 
     .sitemap-title {
-        display: none;
-    }
-
-    .sitemap-title-mobile {
-        display: block;
         margin-right: 5px;
     }
 
     .sitemap-version {
-        float: right;
+        margin-top: 90px;
+    }
+
+    @-moz-document url-prefix() {
+        .sitemap-title {
+            margin-top: 30px !important;
+        }
     }
 }

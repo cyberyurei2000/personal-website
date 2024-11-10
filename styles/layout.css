@@ -94,6 +94,10 @@ section button:active {
     color: var(--white);
 }
 
+.button-marker {
+    color: var(--black);
+}
+
 section hr {
     border-left: 2px solid var(--border-out);
     border-top: 2px solid var(--border-out);
@@ -153,6 +157,14 @@ li {
         background-position: top left;
     } to {
         background-position: bottom right;
+    }
+}
+
+@keyframes scroll2 {
+    from {
+        background-position: top right;
+    } to {
+        background-position: bottom left;
     }
 }
 
@@ -244,7 +256,7 @@ li {
     /*background-image: url("/resources/images/content-background.webp");
     background-size: 48px;*/
     background: repeating-conic-gradient(var(--checkboard-color) 0% 25%, transparent 0% 50%) 50% / 20px 20px;
-    animation: scroll 30s linear infinite;
+    animation: scroll2 30s linear infinite;
     font-size: 15px;
     text-align: center;
     border-left: 3px solid var(--border-out);

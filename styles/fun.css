@@ -269,6 +269,7 @@ body.me {
 /* -------------------Webver------------------- */
 .about-dialog {
     background: var(--dialog-background);
+    box-shadow: 5px 5px #00000062;
     color: var(--dialog-black);
     border: 2px solid var(--dialog-border);
     font-family: "Tahoma, MS Gothic";
@@ -286,8 +287,8 @@ body.me {
 }
 
 .about-dialog-header {
-    background: rgb(10,36,106);
-    background: linear-gradient(90deg, rgba(10,36,106,1) 30%, rgba(166,202,240,1) 100%);
+    /*background: linear-gradient(90deg, rgba(10,36,106,1) 30%, rgba(166,202,240,1) 100%);*/
+    background: linear-gradient(90deg, #160e3f 30%, #6f679c 100%);
     border-bottom: 1px solid var(--dialog-border);
     color: var(--dialog-white);
     padding: 5px;
@@ -328,6 +329,7 @@ body.me {
 
 .dialog-button {
     background: var(--dialog-background);
+    color: var(--black);
     border-bottom-color: var(--dialog-grey);
     border-right-color: var(--dialog-grey);
     border-top-color: var(--dialog-white);

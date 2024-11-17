@@ -1,0 +1,120 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --popup-grey: #9a9a9a;
+    --popup-background: #d5d1c9;
+    --popup-shadow: #00000062;
+    --popup-border: #afadad;
+    --popup-gbackground1: #160e3f;
+    --popup-gbackground2: #6f679c;
+}
+
+/* -------------------Layout------------------- */
+.popup-dialog {
+    background: var(--popup-background);
+    box-shadow: 5px 5px var(--popup-shadow);
+    color: var(--black);
+    border: 2px solid var(--popup-border);
+    font-family: "Tahoma, MS Gothic";
+    font-size: 14px;
+    text-shadow: none;
+    min-width: 340px;
+    width: 80%;
+    max-width: 420px;
+    height: 400px;
+    position: fixed;
+    margin: 5% auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+.popup-dialog-header {
+    background: linear-gradient(90deg, var(--popup-gbackground1) 30%, var(--popup-gbackground2) 100%);
+    border-bottom: 1px solid var(--popup-border);
+    color: var(--white);
+    padding: 5px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-button {
+    background: var(--popup-background);
+    color: var(--black);
+    border-bottom-color: var(--popup-grey);
+    border-right-color: var(--popup-grey);
+    border-top-color: var(--white);
+    border-left-color: var(--white);
+    border-style: outset;
+}
+
+.popup-button:active {
+    border-style: inset;
+    border-bottom-color: var(--white);
+    border-right-color: var(--white);
+    border-top-color: var(--popup-grey);
+    border-left-color: var(--popup-grey);
+}
+
+.popup-close {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.popup-normal-button {
+    position: relative;
+    float: right;
+    margin-right: 4%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@-moz-document url-prefix() {
+    .popup-dialog {
+        height: 402px;
+    }
+
+    .popup-close {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+/* -------------------Webver------------------- */
+.about-banner {
+    background-image: url("/resources/images/webver.webp");
+    width: 120px;
+    height: 373px;
+}
+
+.about-content {
+    vertical-align: top;
+}
+
+.about-content-top {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.about-content-bottom {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 90px;
+}
+
+@-moz-document url-prefix() {
+    .about-container {
+        font-size: 13px;
+    }
+
+    .about-content-bottom {
+        margin-left: 10px;
+        margin-top: 85px;
+    }
+}

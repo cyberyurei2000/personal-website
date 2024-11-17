@@ -13,8 +13,13 @@
     --link-hover: #ff1b64;
     --border-in: #535970;
     --border-out: #171923;
-    --checkboard-color: #2f3347;
     --image-container-background: #12141e8e;
+    --scrollbar-background: #686d81;
+    --scrollbar-thumb: #42455f;
+    --scrollbar-in: #7d839c;
+    --scrollbar-out: #1f2333;
+    --clock-background: #2a1021;
+    --checkboard-color: #2f3347;
     --shadow: #00000096;
 }
 
@@ -113,16 +118,16 @@ li {
 }
 
 ::-webkit-scrollbar {
-    background-color: #686d81;
+    background-color: var(--scrollbar-background);
     width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #42455f;
-    border-left: 2px solid #7d839c;
-    border-top: 2px solid #7d839c;
-    border-right: 2px solid #1f2333;
-    border-bottom: 2px solid #1f2333;
+    background-color: var(--scrollbar-thumb);
+    border-left: 2px solid var(--scrollbar-in);
+    border-top: 2px solid var(--scrollbar-in);
+    border-right: 2px solid var(--scrollbar-out);
+    border-bottom: 2px solid var(--scrollbar-out);
 }
 
 .image-container {
@@ -253,8 +258,6 @@ li {
 }
 
 .mainbar-dropdown-content {
-    /*background-image: url("/resources/images/content-background.webp");
-    background-size: 48px;*/
     background: repeating-conic-gradient(var(--checkboard-color) 0% 25%, transparent 0% 50%) 50% / 20px 20px;
     animation: scroll2 30s linear infinite;
     font-size: 15px;
@@ -340,7 +343,7 @@ li {
 }
 
 .clock {
-    background-color: #2a1021;
+    background-color: var(--clock-background);
     color: var(--link-hover);
     font-family: "Digital-7";
     font-size: 18px;

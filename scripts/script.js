@@ -98,35 +98,33 @@ switch(month) {
 // Webver
 var dialog_place = document.getElementById("webver-placeholder");
 var dialog_trigger = document.getElementById("webver-trigger");
-var version = "2024.11.09-alpha9";
+var version = "2024.11.17-alpha10";
 
 function display_webver() {
     let dialog = `
-    <div class="about-dialog">
-        <div class="about-dialog-header">
+    <div class="popup-dialog">
+        <div class="popup-dialog-header">
             <span>About this page</span>
             <div>
-                <button class="dialog-button window-button" onclick="close_webver()">
+                <button class="popup-button popup-close" onclick="close_webver()">
                     <strong>X</strong>
                 </button>
             </div>
         </div>
-        <table class="about-dialog-main" cellspacing="0" cellpadding="0">
+        <table class="about-container" cellspacing="0" cellpadding="0">
             <tr>
-                <td class="about-dialog-banner">
-                    <!--<p class="banner-text">サイバー幽霊</p>-->
-                </td>
-                <td class="about-dialog-content">
-                    <div class="content-text-top">
+                <td class="about-banner"></td>
+                <td class="about-container">
+                    <div class="about-content-top">
                         <p>サイバー幽霊</p>
                         <p>Version ${version}</p>
                         <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
                     </div>
-                    <div class="content-text-bottom">
+                    <div class="about-content-bottom">
                         <p>This product is hosted on Neocities and licensed under the 3-Clause BSD License to:</p>
                         <p>Visitor</p>
                         <hr>
-                        <button class="dialog-button normal-button" onclick="close_webver()">OK</button>
+                        <button class="popup-button popup-normal-button" onclick="close_webver()">OK</button>
                     </div>
                 </td>
             </tr>

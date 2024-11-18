@@ -9,8 +9,8 @@
     --background2: #232641;
     --section-background: #2c30449c;
     --link-hover: #ff1b64;
-    --border-in: #dd6464;
-    --border-out: #5c1b1b;
+    --header-border-in: #dd6464;
+    --header-border-out: #5c1b1b;
 }
 
 @font-face {
@@ -66,10 +66,10 @@ header {
     background-color: var(--red);
     font-family: "Sazanami Gothic";
     font-weight: bold;
-    border-left: 3px solid var(--border-in);
-    border-right: 3px solid var(--border-out);
-    border-top: 3px solid var(--border-in);
-    border-bottom: 2px solid var(--border-out);
+    border-left: 3px solid var(--header-border-in);
+    border-right: 3px solid var(--header-border-out);
+    border-top: 3px solid var(--header-border-in);
+    border-bottom: 2px solid var(--header-border-out);
     padding: 8px;
 }
 
@@ -109,6 +109,7 @@ header {
     }
 
     .sitemap-title {
+        margin-top: -2px !important;
         margin-right: 5px;
     }
 
@@ -118,7 +119,7 @@ header {
 
     @-moz-document url-prefix() {
         .sitemap-title {
-            margin-top: 30px !important;
+            margin-top: 37px !important;
         }
     }
 }

@@ -317,23 +317,6 @@
     margin-bottom: 10px;
 }
 
-.omake-table {
-    border: 2px solid var(--white);
-    box-shadow: 3px 3px var(--black);
-    width: 100%;
-}
-
-.omake-table-data {
-    border: 1px solid var(--white);
-    box-shadow: 2px 2px var(--black);
-    padding: 5px;
-}
-
-.omake-table-data p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 @media(max-width: 650px) {
     .omake-buttons {
         flex-direction: column;
@@ -409,5 +392,12 @@
     background-image: url("../resources/images/svg/construction.svg");
     background-repeat: no-repeat;
     background-size: 60% 200px;
+    background-position: 110% 50%;
+}
+
+.section-writing {
+    background-image: url("../resources/images/svg/traffic-sign.svg");
+    background-repeat: no-repeat;
+    background-size: 50% 200px;
     background-position: 110% 50%;
 }

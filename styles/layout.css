@@ -157,6 +157,23 @@ li {
     overflow-wrap: break-word;
 }
 
+.table {
+    border: 2px solid var(--white);
+    box-shadow: 3px 3px var(--black);
+    width: 100%;
+}
+
+.table-data {
+    border: 1px solid var(--white);
+    box-shadow: 2px 2px var(--black);
+    padding: 5px;
+}
+
+.table-data p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 @keyframes scroll {
     from {
         background-position: top left;

@@ -161,6 +161,8 @@ li {
     border: 2px solid var(--white);
     box-shadow: 3px 3px var(--black);
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .table-data {

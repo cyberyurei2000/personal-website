@@ -118,7 +118,7 @@ function display_webver() {
                     <div class="about-content-top">
                         <p>サイバー幽霊</p>
                         <p>Version ${version}</p>
-                        <p>Copyright (C) 2023-2024 cyber_yurei2000</p>
+                        <p>Copyright (C) 2023-2025 cyber_yurei2000</p>
                     </div>
                     <div class="about-content-bottom">
                         <p>This product is hosted on Neocities and licensed under the 3-Clause BSD License to:</p>
